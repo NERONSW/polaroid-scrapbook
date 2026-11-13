@@ -1,0 +1,42 @@
+// =============================================================================
+// _mixins.scss — Responsive & layout mixins
+// Archival Heirloom Scrapbook (Polaroid Keepsake)
+// =============================================================================
+
+// Mobile-first breakpoints aligned with Tailwind's default scale.
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+// Emit @content inside a min-width media query.
+@mixin from($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Wall-of-Wishes masonry: 1 → 2 → 3 columns as the viewport widens.
+@mixin masonry {
+  columns: 1;
+  gap: 1.5rem;
+
+  @include from($bp-md) {
+    columns: 2;
+  }
+
+  @include from($bp-lg) {
+    columns: 3;
+  }
+}
