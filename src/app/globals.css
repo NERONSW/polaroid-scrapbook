@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* =============================================================================
+   Design tokens — Polaroid Scrapbook Keepsake (reference/DESIGN.md)
+   Tailwind CSS v4 uses CSS-first configuration: every --color-* / --font-*
+   token below becomes a utility (bg-surface-canvas, text-primary, font-headline…).
+   ============================================================================= */
+@theme {
+  /* --- Canvas & surface materials --- */
+  --color-surface-canvas: #fdf9f3;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f7f3ed;
+  --color-surface-container: #f1ede7;
+  --color-surface-darkroom: rgba(22, 20, 19, 0.94);
+
+  /* --- Accents & washi palette --- */
+  --color-primary: #99462a;
+  --color-primary-container: #d97757;
+  --color-secondary: #7d562d;
+  --color-secondary-container: #ffca98;
+  --color-tertiary: #7d5546;
+  --color-tertiary-container: #b68776;
+
+  /* --- Ink & hairline --- */
+  --color-outline-hairline: #dbc1b9;
+  --color-on-surface-espresso: #1c1c18;
+  --color-on-surface-umber: #55433d;
+  --color-on-surface-muted: #88726c;
+
+  /* --- Craft effects --- */
+  --color-washi-terracotta: rgba(217, 119, 87, 0.45);
+  --color-washi-gold: rgba(255, 202, 152, 0.65);
+  --color-darkroom-corner: #2c2724;
+
+  /* --- Typography (next/font CSS variables are defined on <html>) --- */
+  --font-headline: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-body:
+    var(--font-newsreader), "Newsreader", var(--font-sinhala),
+    "Noto Serif Sinhala", Georgia, serif;
+  --font-sans:
+    var(--font-jakarta), "Plus Jakarta Sans", ui-sans-serif, system-ui,
+    sans-serif;
+  --font-cursive: var(--font-caveat), "Caveat", cursive;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background-color: var(--color-surface-canvas);
+    color: var(--color-on-surface-espresso);
+    font-family: var(--font-body);
+    line-height: 1.75;
+  }
+
+  /* Sinhala vowel diacritics & conjunct ligatures need generous vertical room */
+  :lang(si) {
+    line-height: 1.85;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  /* Vintage rag-paper grain (reference/code.html) */
+  .paper-texture {
+    background-image:
+      radial-gradient(
+        var(--color-primary-container) 0.45px,
+        transparent 0.45px
+      ),
+      radial-gradient(
+        var(--color-on-surface-muted) 0.45px,
+        var(--color-surface-canvas) 0.45px
+      );
+    background-size: 24px 24px;
+    background-position:
+      0 0,
+      12px 12px;
+  }
+
+  /* Handwritten script — intimate signatures & polaroid captions */
+  .font-cursive {
+    font-family: var(--font-cursive);
+  }
 }
