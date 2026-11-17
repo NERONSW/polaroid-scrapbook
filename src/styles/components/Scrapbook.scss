@@ -1,10 +1,10 @@
 // =============================================================================
-// _Scrapbook.module.scss — Tactile craft effects
+// Scrapbook.scss — Tactile craft effects (global)
 // Multi-layered paper shadows, vintage darkroom mounting corners, and
 // translucent washi tape — extracted from reference/code.html + DESIGN.md §4–5.
 //
-// Consumed as a CSS Module:
-//   import styles from "@/styles/components/_Scrapbook.module.scss";
+// Global stylesheet: imported once in src/app/layout.tsx; classes are
+// referenced by their literal names from components.
 // =============================================================================
 
 @use "../mixins" as *;
@@ -82,6 +82,32 @@
     background-color: color-mix(
       in srgb,
       var(--color-tertiary-container) 70%,
+      transparent
+    );
+  }
+
+  // Solid "hero badge" variants — closer to code.html's more opaque tape
+  // strips (bg-primary-container/80 etc.) for stronger text contrast.
+  &--terracotta-solid {
+    background-color: color-mix(
+      in srgb,
+      var(--color-primary-container) 80%,
+      transparent
+    );
+  }
+
+  &--gold-solid {
+    background-color: color-mix(
+      in srgb,
+      var(--color-secondary-container) 85%,
+      transparent
+    );
+  }
+
+  &--blush-solid {
+    background-color: color-mix(
+      in srgb,
+      var(--color-tertiary-container) 85%,
       transparent
     );
   }

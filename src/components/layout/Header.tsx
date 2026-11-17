@@ -3,7 +3,6 @@ import type { ReactNode } from "react";
 import { BadgeCheck, Heart, Mail } from "lucide-react";
 import { tributes } from "@/data/tributes";
 import { photos } from "@/data/photos";
-import styles from "@/styles/components/_Scrapbook.module.scss";
 
 interface QuickLinkProps {
   href: string;
@@ -32,10 +31,10 @@ export default function Header() {
     <>
       {/* Editorial postal & keepsake banner — stays in normal document flow */}
       <header className="w-full border-b border-outline-hairline/40 bg-surface-container-low">
-        <div
-          className={clsx("h-1.5", styles.airmailHatch)}
+        {/* <div
+          className={clsx("h-1.5", "airmail-hatch")}
           aria-hidden="true"
-        />
+        /> */}
 
         <div className="px-4 py-2.5">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-xs sm:flex-row">
