@@ -4,7 +4,6 @@ import clsx from "clsx";
 import { motion } from "motion/react";
 import type { Photo } from "@/data/photos";
 import WashiTape from "@/components/ui/WashiTape";
-import styles from "@/styles/components/_Scrapbook.module.scss";
 
 interface PolaroidCardProps {
   photo: Photo;
@@ -26,7 +25,7 @@ export default function PolaroidCard({
     <motion.article
       className={clsx(
         "group relative cursor-pointer border border-outline-hairline bg-surface-container-lowest p-3 pb-6",
-        styles.polaroidShadow,
+        "polaroid-shadow",
         className
       )}
       // Start at the organic micro-rotation; lift & straighten on hover, press on tap.
@@ -55,10 +54,10 @@ export default function PolaroidCard({
 
       {/* Image container with vintage darkroom mounting corners */}
       <div className="relative aspect-square overflow-hidden bg-surface-container">
-        <span className={clsx(styles.mountingCorner, styles.mountingCornerTopLeft)} aria-hidden="true" />
-        <span className={clsx(styles.mountingCorner, styles.mountingCornerTopRight)} aria-hidden="true" />
-        <span className={clsx(styles.mountingCorner, styles.mountingCornerBottomLeft)} aria-hidden="true" />
-        <span className={clsx(styles.mountingCorner, styles.mountingCornerBottomRight)} aria-hidden="true" />
+        <span className="mounting-corner mounting-corner--top-left" aria-hidden="true" />
+        <span className="mounting-corner mounting-corner--top-right" aria-hidden="true" />
+        <span className="mounting-corner mounting-corner--bottom-left" aria-hidden="true" />
+        <span className="mounting-corner mounting-corner--bottom-right" aria-hidden="true" />
 
         <img
           src={photo.imageUrl}

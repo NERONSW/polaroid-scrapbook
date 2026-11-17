@@ -7,6 +7,7 @@ import {
   Noto_Serif_Sinhala,
 } from "next/font/google";
 import "./globals.css";
+import "@/styles/components/Scrapbook.scss";
 
 // High-editorial display — mastheads, hero banners, chapter roman numerals.
 const playfair = Playfair_Display({

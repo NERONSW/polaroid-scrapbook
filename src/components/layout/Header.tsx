@@ -3,7 +3,6 @@ import type { ReactNode } from "react";
 import { BadgeCheck, Heart, Mail } from "lucide-react";
 import { tributes } from "@/data/tributes";
 import { photos } from "@/data/photos";
-import styles from "@/styles/components/_Scrapbook.module.scss";
 
 interface QuickLinkProps {
   href: string;
@@ -15,7 +14,7 @@ function QuickLink({ href, children, count }: QuickLinkProps) {
   return (
     <a
       href={href}
-      className="inline-flex min-h-[44px] shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-1 font-sans text-xs font-semibold text-on-surface-umber transition-colors hover:bg-surface-container hover:text-primary"
+      className="inline-flex min-h-11 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-1 font-sans text-xs font-semibold text-on-surface-umber transition-colors hover:bg-surface-container hover:text-primary"
     >
       {children}
       {typeof count === "number" && (
@@ -32,12 +31,18 @@ export default function Header() {
     <>
       {/* Editorial postal & keepsake banner — stays in normal document flow */}
       <header className="w-full border-b border-outline-hairline/40 bg-surface-container-low">
-        <div className={clsx("h-1.5", styles.airmailHatch)} aria-hidden="true" />
+        {/* <div
+          className={clsx("h-1.5", "airmail-hatch")}
+          aria-hidden="true"
+        /> */}
 
         <div className="px-4 py-2.5">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-xs sm:flex-row">
             <div className="flex items-center gap-2">
-              <BadgeCheck className="h-[17px] w-[17px] text-primary" aria-hidden="true" />
+              <BadgeCheck
+                className="h-4.25 w-4.25 text-primary"
+                aria-hidden="true"
+              />
               <span className="font-sans font-semibold uppercase tracking-widest text-on-surface-umber">
                 A Private Family Keepsake Edition • Vol. 1 • 1964 — 2024
               </span>
@@ -45,7 +50,10 @@ export default function Header() {
 
             <div className="flex items-center gap-3">
               <div className="flex rotate-[-0.5deg] items-center gap-2 bg-surface-container px-3 py-1 shadow-sm">
-                <Mail className="h-[15px] w-[15px] text-primary" aria-hidden="true" />
+                <Mail
+                  className="h-3.75 w-3.75 text-primary"
+                  aria-hidden="true"
+                />
                 <span className="font-sans font-bold uppercase tracking-wider text-secondary">
                   Par Avion • Air Mail
                 </span>
@@ -66,7 +74,7 @@ export default function Header() {
         aria-label="Quick jump"
         className="sticky top-4 z-50 mx-auto my-2 w-fit max-w-full px-2"
       >
-        <div className="flex items-center gap-1 overflow-x-auto rounded-full border border-outline-hairline/60 bg-surface-container-lowest/95 px-3 py-1.5 shadow-lg backdrop-blur-md sm:gap-2">
+        <div className="flex flex-wrap items-center justify-center gap-1.5 rounded-3xl border border-outline-hairline/60 bg-surface-container-lowest/95 px-3 py-1.5 shadow-lg backdrop-blur-md sm:gap-2 sm:rounded-full">
           <div className="hidden shrink-0 items-center gap-1.5 border-r border-outline-hairline/40 pl-2 pr-1 text-primary sm:flex">
             <Heart className="h-4 w-4" aria-hidden="true" />
             <span className="font-headline text-xs italic">Arthur @ 60</span>

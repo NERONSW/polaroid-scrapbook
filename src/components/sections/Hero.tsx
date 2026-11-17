@@ -29,6 +29,7 @@ export default function Hero() {
             tone="terracotta"
             label="★ The Best Smile"
             rotation={-2}
+            solid
             className="absolute -top-3.5 left-1/2 z-20 h-6 w-32 -translate-x-1/2"
           />
 
