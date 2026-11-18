@@ -74,10 +74,13 @@ function AuthorPortrait({
 }
 
 function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
+  const hasTape = Boolean(tribute.tapeText);
+
   return (
     <motion.article
       className={clsx(
-        "relative mb-6 break-inside-avoid border border-outline-hairline bg-surface-container-lowest p-6 shadow-md transition-transform duration-300 hover:rotate-0",
+        "relative mb-6 break-inside-avoid border border-outline-hairline bg-surface-container-lowest px-6 pb-6 shadow-md transition-transform duration-300 hover:rotate-0",
+        hasTape ? "pt-12" : "pt-6",
         CARD_ROTATIONS[index % CARD_ROTATIONS.length],
       )}
       initial={{ opacity: 0, y: 14 }}
@@ -85,12 +88,12 @@ function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
       viewport={{ once: true }}
       transition={{ duration: 0.45, ease: "easeOut" }}
     >
-      {tribute.tapeText && (
+      {hasTape && (
         <WashiTape
           tone={tribute.tapeColor ?? "terracotta"}
           label={tribute.tapeText}
           rotation={-1.5}
-          className="absolute -top-3 left-6 z-10 h-5 w-fit"
+          className="absolute top-1 left-6 z-30 h-5 w-fit"
         />
       )}
 
@@ -166,7 +169,7 @@ export default function WishesSection() {
       </motion.div>
 
       {/* 1 → 2 → 3 column masonry of tribute cards */}
-      <div className="columns-1 gap-6 md:columns-2 lg:columns-3">
+      <div className="columns-1 gap-6 md:columns-2 lg:columns-3 space-y-0">
         {coreTributes.map((tribute, index) => (
           <TributeCard key={tribute.id} tribute={tribute} index={index} />
         ))}
