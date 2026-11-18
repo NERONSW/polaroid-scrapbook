@@ -34,14 +34,20 @@ const PORTRAIT_TILTS = [
   "rotate-[-2deg]",
 ] as const;
 
-function AuthorPortrait({ tribute, index }: { tribute: Tribute; index: number }) {
+function AuthorPortrait({
+  tribute,
+  index,
+}: {
+  tribute: Tribute;
+  index: number;
+}) {
   const initial = tribute.author.trim().charAt(0).toUpperCase();
 
   return (
     <div
       className={clsx(
-        "w-16 shrink-0 rounded-[2px] border border-outline-hairline bg-surface-container-lowest p-1 shadow-sm",
-        PORTRAIT_TILTS[index % PORTRAIT_TILTS.length]
+        "w-16 shrink-0 rounded-xs border border-outline-hairline bg-surface-container-lowest p-1 shadow-sm",
+        PORTRAIT_TILTS[index % PORTRAIT_TILTS.length],
       )}
     >
       <div className="relative aspect-square w-full overflow-hidden bg-surface-container">
@@ -75,7 +81,7 @@ function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
     <motion.article
       className={clsx(
         "relative mb-6 break-inside-avoid border border-outline-hairline bg-surface-container-lowest p-6 shadow-md transition-transform duration-300 hover:rotate-0",
-        CARD_ROTATIONS[index % CARD_ROTATIONS.length]
+        CARD_ROTATIONS[index % CARD_ROTATIONS.length],
       )}
       initial={{ opacity: 0, y: 14 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -184,7 +190,7 @@ export default function WishesSection() {
           type="button"
           onClick={() => setExpanded((value) => !value)}
           aria-expanded={expanded}
-          className="inline-flex min-h-[48px] items-center gap-2 rounded-full border border-outline-hairline bg-surface-container-lowest px-6 py-3 font-sans text-sm font-semibold text-primary shadow-md transition-all duration-300 hover:bg-surface-container hover:shadow-lg"
+          className="inline-flex min-h-12 items-center gap-2 rounded-full border border-outline-hairline bg-surface-container-lowest px-6 py-3 font-sans text-sm font-semibold text-primary shadow-md transition-all duration-300 hover:bg-surface-container hover:shadow-lg"
         >
           <span>
             {expanded
@@ -194,7 +200,7 @@ export default function WishesSection() {
           <ChevronDown
             className={clsx(
               "h-5 w-5 transition-transform duration-300",
-              expanded && "rotate-180"
+              expanded && "rotate-180",
             )}
             aria-hidden="true"
           />
