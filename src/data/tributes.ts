@@ -35,6 +35,10 @@ export interface Tribute {
   tag?: string;
   /** Handwritten sign-off. */
   signature?: string;
+  /** Optional mini-polaroid portrait of the author(s). */
+  authorImage?: string;
+  /** Optional handwritten caption beneath the author portrait. */
+  authorImageCaption?: string;
 }
 
 /** Number of tributes shown before the accordion expands. */
@@ -52,6 +56,9 @@ export const tributes: Tribute[] = [
     badge: "Pops' Fans ♡",
     tag: 'Roots & Sunshine',
     signature: '— Clara & Maya ♡',
+    authorImage:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuAuO0eSBj6EQVnBtKE0NivIjsiZdg5Xa7N-aeJNLTrMb6FU-QBM4TmncYjdEk7x6XZlZsEjy8kRedYGyJUIwUpRoC4aM5o4HqO9eQa6tCwkGhHEI_h322IehxgTNqZB-X1zzkZtPGwB7JxeIibhedJRFreGDm5FOOCjby-9TI1XBy5hxSEpEt2aw-ChRfVKD9LqOZKspZ5aRJ37OuQIMXyjegsWH0jZN6XHvzF7umk5',
+    authorImageCaption: "Maya '22",
   },
   {
     id: 2,
@@ -76,6 +83,9 @@ export const tributes: Tribute[] = [
     badge: 'Since 1978',
     tag: 'Pint on me! 🍻',
     signature: '— Marcus',
+    authorImage:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCAaC7F3tQgdzDpsSzKQs4hPNMa5Auel9X56P2zDgOFh7uQHJs-SMSd-RsbNmNm3EqkI1qFlArgxPfWs6R9Zt1Kb_hhB8VHSL6CpanBCQW3Vl01qgYZfqZ3B5s08TwjhwV_sYctInMdYBWYF6gxDwCYZXiXsvNYnu_aQKYidRLw5rSI9sqPwESzp7TBmrHJztE5Iqyt4Unp2MwD-jKAwSvS0NrJ5NYGU1ij-XP8ubow',
+    authorImageCaption: "Marcus '78",
   },
   {
     id: 4,
@@ -88,6 +98,9 @@ export const tributes: Tribute[] = [
     badge: 'Craftsman Bond ★',
     tag: 'Proud Son',
     signature: '— Julian',
+    authorImage:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuANCYv2mjubZIs36JUX7jE3BzBLIKCDlqULj0f87ly-G-TPlQn3KZSIol1yAhq-z_v_eIKdURBjvSa4oXqXSy6URNjuBq0qwP0QIxV1mjadULQsX5sZhqsN5-C7TR8Myhn0GVEWeSFX5KXnwpd1-r4ASR-2F1GV1oUKtfhOuEihwPUC3MQV8rw1Q1cnqrzHonCpyfHyp0CXR-l7iU-nu7oyBuiPu3FiXll3Bvp8THml',
+    authorImageCaption: "Julian '04",
   },
   {
     id: 5,
@@ -100,6 +113,9 @@ export const tributes: Tribute[] = [
     badge: 'Big Sister',
     tag: 'Always Family',
     signature: '— Elena ♡',
+    authorImage:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuBI_wPVWZbcFfFe_VKiNjaT2rx0oNRCQtpl1W4pzvIEJ4OW07Mf1K-TRGHSo9CJ62BhIwsaFbOsEz0pepqW0lkCwvAHXQYZh-wKZaw6ADrUJvLdK3zFPQFGWp_VxnBbaVbec4L2OaPkpl3volBmuG7PHsMjkYnWczTnNnc6en8LztmZk6JlRL3yyVqbIBnu9Beklc6-N8OOUQofzdwKQbBlP2BNYub_GAtH6Sq0IZwa',
+    authorImageCaption: "Elena '68",
   },
   {
     id: 6,

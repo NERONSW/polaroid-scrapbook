@@ -26,6 +26,50 @@ const CARD_ROTATIONS = [
 
 const WASHI_TONES: WashiTone[] = ["terracotta", "gold", "blush"];
 
+// Small tilt variety for the mini-polaroid author portraits.
+const PORTRAIT_TILTS = [
+  "rotate-2",
+  "rotate-[-3deg]",
+  "rotate-[1.5deg]",
+  "rotate-[-2deg]",
+] as const;
+
+function AuthorPortrait({ tribute, index }: { tribute: Tribute; index: number }) {
+  const initial = tribute.author.trim().charAt(0).toUpperCase();
+
+  return (
+    <div
+      className={clsx(
+        "w-16 shrink-0 rounded-[2px] border border-outline-hairline bg-surface-container-lowest p-1 shadow-sm",
+        PORTRAIT_TILTS[index % PORTRAIT_TILTS.length]
+      )}
+    >
+      <div className="relative aspect-square w-full overflow-hidden bg-surface-container">
+        {tribute.authorImage ? (
+          <img
+            src={tribute.authorImage}
+            alt={`${tribute.author} portrait`}
+            loading="lazy"
+            className="h-full w-full object-cover sepia-[0.08]"
+          />
+        ) : (
+          /* Charming archival monogram fallback when no photo is provided. */
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 flex items-center justify-center font-cursive text-2xl leading-none text-on-surface-muted"
+          >
+            {initial}
+          </span>
+        )}
+      </div>
+
+      <div className="pt-0.5 text-center font-body text-[9px] italic leading-tight text-on-surface-muted">
+        {tribute.authorImageCaption || " "}
+      </div>
+    </div>
+  );
+}
+
 function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
   return (
     <motion.article
@@ -48,16 +92,21 @@ function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
       )}
 
       <div className="space-y-3">
-        <div>
-          <span className="block font-sans text-[11px] font-bold uppercase tracking-wider text-primary">
-            {tribute.author}
-          </span>
-          <span className="font-body text-xs italic text-on-surface-muted">
-            {tribute.relation}
-          </span>
-          <h3 className="mt-1 font-headline text-lg text-on-surface-espresso">
-            {tribute.title}
-          </h3>
+        <div className="flex items-start justify-between gap-3">
+          <div className="min-w-0">
+            <span className="block font-sans text-[11px] font-bold uppercase tracking-wider text-primary">
+              {tribute.author}
+            </span>
+            <span className="font-body text-xs italic text-on-surface-muted">
+              {tribute.relation}
+            </span>
+            <h3 className="mt-1 font-headline text-lg text-on-surface-espresso">
+              {tribute.title}
+            </h3>
+          </div>
+
+          {/* Upper-right mini-polaroid author portrait. */}
+          <AuthorPortrait tribute={tribute} index={index} />
         </div>
 
         {/* lang="si" switches on Noto Serif Sinhala + 1.85 line-height via globals.css */}
