@@ -75,6 +75,7 @@ function AuthorPortrait({
 
 function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
   const hasTape = Boolean(tribute.tapeText);
+  const hasTag = Boolean(tribute.tag);
 
   return (
     <motion.article
@@ -123,10 +124,17 @@ function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
           {tribute.content}
         </p>
 
-        <div className="flex items-center justify-between border-t border-dashed border-outline-hairline/60 pt-2">
-          <span className="bg-surface-container px-2 py-0.5 font-sans text-[10px] font-semibold uppercase tracking-wider text-secondary">
-            {tribute.tag}
-          </span>
+        <div
+          className={clsx(
+            "flex items-center border-t border-dashed border-outline-hairline/60 pt-2",
+            hasTag ? "justify-between" : "justify-end",
+          )}
+        >
+          {hasTag && (
+            <span className="bg-surface-container px-2 py-0.5 font-sans text-[10px] font-semibold uppercase tracking-wider text-secondary">
+              {tribute.tag}
+            </span>
+          )}
           <span className="font-cursive text-lg text-primary">
             {tribute.signature}
           </span>
