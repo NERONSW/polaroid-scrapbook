@@ -9,6 +9,8 @@
  * and ids 7–22 are revealed by the progressive-disclosure accordion.
  */
 
+import type { WashiTone } from '@/data/photos';
+
 export type TributeLanguage = 'en' | 'si';
 
 export interface Tribute {
@@ -29,8 +31,10 @@ export interface Tribute {
   date?: string;
   /** 'en' for English, 'si' for Sinhala (Noto Serif Sinhala) entries. */
   language: TributeLanguage;
-  /** Washi-tape label pinned to the top of the card. */
-  badge?: string;
+  /** Washi-tape banner label pinned to the top of the card. */
+  tapeText?: string;
+  /** Washi-tape banner colour. */
+  tapeColor?: WashiTone;
   /** Footer category stamp. */
   tag?: string;
   /** Handwritten sign-off. */
@@ -53,7 +57,8 @@ export const tributes: Tribute[] = [
     content:
       'Happy 60th to our favorite storyteller! Watching you hold Maya reminds me of every tender bedtime story when rain pounded against the glass. You always made us feel completely secure in this world.',
     language: 'en',
-    badge: "Pops' Fans ♡",
+    tapeText: "Pops' Fans ♡",
+    tapeColor: 'terracotta',
     tag: 'Roots & Sunshine',
     signature: '— Clara & Maya ♡',
     authorImage:
@@ -68,7 +73,8 @@ export const tributes: Tribute[] = [
     content:
       'Thirty-six years since we pledged our lives in that small brick chapel, Art. Through every leaky roof, chaotic kitchen renovation, and sunrise over tea, you’ve made every day an adventure of tenderness. Here’s to our golden afternoon together.',
     language: 'en',
-    badge: '36 Years Together',
+    tapeText: '36 Years Together',
+    tapeColor: 'gold',
     tag: 'Forever & Always',
     signature: 'All my love, Sarah ♡',
   },
@@ -80,7 +86,8 @@ export const tributes: Tribute[] = [
     content:
       'Forty-five years ago on the flooded library steps, you handed me your last tenner and walked two miles home in the rain with a soggy baguette. Best friend a chap could ever dream of having!',
     language: 'en',
-    badge: 'Since 1978',
+    tapeText: 'Since 1978',
+    tapeColor: 'gold',
     tag: 'Pint on me! 🍻',
     signature: '— Marcus',
     authorImage:
@@ -95,7 +102,8 @@ export const tributes: Tribute[] = [
     content:
       'Dad, everything I know about integrity began in your garage workshop. You showed me that how you build things in the quiet hours reflects how you honor people. Thank you for never rushing me.',
     language: 'en',
-    badge: 'Craftsman Bond ★',
+    tapeText: 'Craftsman Bond ★',
+    tapeColor: 'blush',
     tag: 'Proud Son',
     signature: '— Julian',
     authorImage:
@@ -110,7 +118,8 @@ export const tributes: Tribute[] = [
     content:
       'Dearest Artie, who knew the boy who fell out of the orchard tree and blamed the magpie would grow into the most dignified patriarch of this family? 60 years of being your big sister and loving each chapter!',
     language: 'en',
-    badge: 'Big Sister',
+    tapeText: 'Big Sister',
+    tapeColor: 'terracotta',
     tag: 'Always Family',
     signature: '— Elena ♡',
     authorImage:
@@ -125,7 +134,8 @@ export const tributes: Tribute[] = [
     content:
       'We still remember you at eight years old, with berry-stained fingers and scratched knees on the moors, promising to build a castle with your own hands. You did build a castle, Arthur—one of warmth and honor.',
     language: 'en',
-    badge: 'Devon Memories',
+    tapeText: 'Devon Memories',
+    tapeColor: 'gold',
     tag: 'With Pride',
     signature: '— Uncle Henry & Bea',
   },
@@ -137,7 +147,8 @@ export const tributes: Tribute[] = [
     content:
       'Grandpa makes the greatest pancakes with funny blueberry faces and he never gets mad when our wooden train set takes over his entire sitting room floor! Happy 60th Grandpa!',
     language: 'en',
-    badge: 'Lego Mastermind',
+    tapeText: 'Lego Mastermind',
+    tapeColor: 'amber',
     tag: 'Grandpa Rocks',
     signature: 'Liam & Olly 🚀',
   },
@@ -149,7 +160,8 @@ export const tributes: Tribute[] = [
     content:
       'Arthur, our community greenhouse would have fallen flat without your clever rainwater collector and endless patience explaining grafting to us novices. Happy milestone birthday!',
     language: 'en',
-    badge: 'Greenhouse Crew',
+    tapeText: 'Greenhouse Crew',
+    tapeColor: 'emerald',
     tag: 'Green Thumbs',
     signature: '— Chloe J. 🌱',
   },
@@ -161,7 +173,8 @@ export const tributes: Tribute[] = [
     content:
       'Over thirty years of departmental meetings, you were always the calm voice in the tempest. Your dedication to scholarship was matched only by your devotion to mentoring young fellows.',
     language: 'en',
-    badge: 'Colleague & Co-Author',
+    tapeText: 'Colleague & Co-Author',
+    tapeColor: 'terracotta',
     tag: 'In Fellowship',
     signature: '— Robert Sterling',
   },
@@ -173,7 +186,8 @@ export const tributes: Tribute[] = [
     content:
       'The neighborhood won’t ever find a more considerate neighbor. Snow shoveled before daybreak, hedge clippers cheerfully lent, and warm conversations on summer dusk. Happy 60th, Arthur!',
     language: 'en',
-    badge: 'Next Door Neighbors',
+    tapeText: 'Next Door Neighbors',
+    tapeColor: 'gold',
     tag: 'Good Neighbors',
     signature: '— Tom & Evie',
   },
@@ -196,7 +210,8 @@ export const tributes: Tribute[] = [
     content:
       "Remember when our map got soaked through halfway up the ridge and you guided us back down with a chocolate bar and sheer Scottish stubbornness? You're a true brother of the trail.",
     language: 'en',
-    badge: 'Highland Hikes',
+    tapeText: 'Highland Hikes',
+    tapeColor: 'blush',
     tag: 'Slàinte Mhath!',
     signature: '— Mac',
   },
@@ -230,7 +245,8 @@ export const tributes: Tribute[] = [
     content:
       'Still unmatched in 19th-century geography trivia! We’ve kept your seat by the fire warm and your tankard polished. Cheers to 60 magnificent years, Artie!',
     language: 'en',
-    badge: 'Thursday Darts',
+    tapeText: 'Thursday Darts',
+    tapeColor: 'gold',
     tag: 'Cheers! 🍺',
     signature: '— Barnaby, Greg & Stan',
   },
@@ -264,7 +280,8 @@ export const tributes: Tribute[] = [
     content:
       'Grandpa, I framed the bird picture we painted together in July! You always say ‘there are no mistakes in art, only interesting new pathways.’ I love you so much!',
     language: 'en',
-    badge: "Lily's Hugs",
+    tapeText: "Lily's Hugs",
+    tapeColor: 'pink',
     tag: 'Artist Pals',
     signature: 'Love, Lily ♡',
   },

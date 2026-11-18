@@ -5,7 +5,13 @@
  * Image URLs are preserved exactly as authored in the source.
  */
 
-export type WashiTone = 'terracotta' | 'gold' | 'blush';
+export type WashiTone =
+  | 'terracotta'
+  | 'gold'
+  | 'blush'
+  | 'amber'
+  | 'emerald'
+  | 'pink';
 
 export interface Photo {
   /** Stable 1-based position — drives the lightbox "Photo X of 22" counter. */

@@ -111,6 +111,31 @@
       transparent
     );
   }
+
+  // Accent tones from code.html wish-card tapes (Tailwind palette colours).
+  &--amber {
+    background-color: color-mix(in srgb, #fde68a 90%, transparent);
+  }
+
+  &--emerald {
+    background-color: color-mix(in srgb, #a7f3d0 70%, transparent);
+  }
+
+  &--pink {
+    background-color: color-mix(in srgb, #fbcfe8 80%, transparent);
+  }
+
+  &--amber-solid {
+    background-color: color-mix(in srgb, #fde68a 94%, transparent);
+  }
+
+  &--emerald-solid {
+    background-color: color-mix(in srgb, #a7f3d0 85%, transparent);
+  }
+
+  &--pink-solid {
+    background-color: color-mix(in srgb, #fbcfe8 90%, transparent);
+  }
 }
 
 // --- Airmail hatching (Header top edge, DESIGN.md §5) ------------------------

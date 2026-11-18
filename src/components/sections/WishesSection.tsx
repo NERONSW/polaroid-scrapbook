@@ -9,7 +9,6 @@ import {
   tributes,
   type Tribute,
 } from "@/data/tributes";
-import type { WashiTone } from "@/data/photos";
 import WashiTape from "@/components/ui/WashiTape";
 
 // Deterministic organic micro-rotations (DESIGN.md §4: -1.5deg → +2.0deg).
@@ -23,8 +22,6 @@ const CARD_ROTATIONS = [
   "rotate-[-1.5deg]",
   "rotate-[0.9deg]",
 ] as const;
-
-const WASHI_TONES: WashiTone[] = ["terracotta", "gold", "blush"];
 
 // Small tilt variety for the mini-polaroid author portraits.
 const PORTRAIT_TILTS = [
@@ -88,12 +85,12 @@ function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
       viewport={{ once: true }}
       transition={{ duration: 0.45, ease: "easeOut" }}
     >
-      {tribute.badge && (
+      {tribute.tapeText && (
         <WashiTape
-          tone={WASHI_TONES[index % WASHI_TONES.length]}
-          label={tribute.badge}
+          tone={tribute.tapeColor ?? "terracotta"}
+          label={tribute.tapeText}
           rotation={-1.5}
-          className="absolute -top-3 left-6 h-5 w-24"
+          className="absolute -top-3 left-6 z-10 h-5 w-fit"
         />
       )}
 

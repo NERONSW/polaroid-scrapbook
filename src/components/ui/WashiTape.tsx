@@ -21,18 +21,27 @@ const TONE_CLASS: Record<WashiTone, string> = {
   terracotta: "washi-tape--terracotta",
   gold: "washi-tape--gold",
   blush: "washi-tape--blush",
+  amber: "washi-tape--amber",
+  emerald: "washi-tape--emerald",
+  pink: "washi-tape--pink",
 };
 
 const SOLID_TONE_CLASS: Record<WashiTone, string> = {
   terracotta: "washi-tape--terracotta-solid",
   gold: "washi-tape--gold-solid",
   blush: "washi-tape--blush-solid",
+  amber: "washi-tape--amber-solid",
+  emerald: "washi-tape--emerald-solid",
+  pink: "washi-tape--pink-solid",
 };
 
 const LABEL_TONE: Record<WashiTone, string> = {
   terracotta: "text-white",
   gold: "text-secondary",
   blush: "text-on-surface-umber",
+  amber: "text-on-surface-espresso",
+  emerald: "text-on-surface-espresso",
+  pink: "text-on-surface-espresso",
 };
 
 export default function WashiTape({
