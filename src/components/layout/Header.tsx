@@ -44,7 +44,7 @@ export default function Header() {
                 aria-hidden="true"
               />
               <span className="font-sans font-semibold uppercase tracking-widest text-on-surface-umber">
-                A Private Family Keepsake Edition • Vol. 1 • 1964 — 2024
+                A Private Family Keepsake Edition • Vol. 1 • 1966 — 2026
               </span>
             </div>
 
@@ -55,13 +55,13 @@ export default function Header() {
                   aria-hidden="true"
                 />
                 <span className="font-sans font-bold uppercase tracking-wider text-secondary">
-                  Par Avion • Air Mail
+                  Par Avion • Across the Globe
                 </span>
                 <span className="text-outline-hairline" aria-hidden="true">
                   •
                 </span>
                 <span className="font-sans text-on-surface-umber">
-                  Oct 1964 — London
+                  Nov 1966 — Diyathalawa, SL
                 </span>
               </div>
             </div>
