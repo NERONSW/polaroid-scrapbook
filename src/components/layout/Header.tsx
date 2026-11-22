@@ -77,10 +77,12 @@ export default function Header() {
         <div className="flex flex-wrap items-center justify-center gap-1.5 rounded-3xl border border-outline-hairline/60 bg-surface-container-lowest/95 px-3 py-1.5 shadow-lg backdrop-blur-md sm:gap-2 sm:rounded-full">
           <div className="hidden shrink-0 items-center gap-1.5 border-r border-outline-hairline/40 pl-2 pr-1 text-primary sm:flex">
             <Heart className="h-4 w-4" aria-hidden="true" />
-            <span className="font-headline text-xs italic">Arthur @ 60</span>
+            <span className="font-headline text-xs italic">
+              Tilakasitha @ 60
+            </span>
           </div>
 
-          <QuickLink href="#story">Arthur’s Story</QuickLink>
+          <QuickLink href="#story">Tilakasiri's Story</QuickLink>
           <QuickLink href="#wishes" count={tributes.length}>
             Wishes
           </QuickLink>
