@@ -11,13 +11,18 @@ export default function Footer() {
         />
 
         {/* Embossed terracotta wax seal */}
-        <div className="inline-flex h-14 w-14 rotate-[-3deg] items-center justify-center bg-primary text-white shadow-md">
-          <Heart className="h-7 w-7" fill="currentColor" strokeWidth={1.5} aria-hidden="true" />
+        <div className="inline-flex h-14 w-14 -rotate-3 items-center justify-center bg-primary text-white shadow-md">
+          <Heart
+            className="h-7 w-7"
+            fill="currentColor"
+            strokeWidth={1.5}
+            aria-hidden="true"
+          />
         </div>
 
         <div className="space-y-1">
           <span className="font-sans text-xs font-bold uppercase tracking-widest text-primary">
-            Family Dedication • October 2024
+            Family Dedication • November 2026
           </span>
           <h2 className="font-headline text-3xl text-on-surface-espresso sm:text-4xl">
             To the Heart of Our Family
@@ -32,22 +37,21 @@ export default function Footer() {
 
         <div className="py-2">
           <p className="font-cursive text-3xl tracking-wide text-primary">
-            “To the heart of our family — forever grateful for you, Dad &amp;
-            Grandpa ♡”
+            “To the heart of our family — forever grateful for you, Dad ♡”
           </p>
         </div>
 
         <div className="pt-2">
           <div className="inline-block bg-surface-container px-4 py-2 shadow-sm">
             <p className="font-sans text-xs font-bold uppercase tracking-widest text-secondary">
-              With boundless love &amp; admiration — Sarah, Clara, Maya, Julian,
-              Elena &amp; all of us
+              With boundless love &amp; admiration — Chulani, Dewni, Ovini,
+              Nipuna, Thisal &amp; all of us
             </p>
           </div>
         </div>
 
         <div className="pt-4 font-sans text-[10px] uppercase tracking-widest text-on-surface-muted">
-          Archived 2024 • Edwards Family Estate • Kept in Living Memory
+          Archived 2026 • Melbourne • Kept in Living Memory
         </div>
       </div>
     </footer>
