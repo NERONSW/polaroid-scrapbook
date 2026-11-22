@@ -218,6 +218,15 @@ export const photos: Photo[] = [
     tapeTone: "gold",
   },
   {
+    id: 26,
+    imageUrl: "/gallery/33.jpeg",
+    title: "Best dressed moments",
+    caption: "“Bringing out the glam for special occasions”",
+    year: "2024",
+    rotation: 1,
+    tapeTone: "terracotta",
+  },
+  {
     id: 20,
     imageUrl: "/gallery/31.jpeg",
     title: "All the way from Bandarawela",
@@ -247,21 +256,19 @@ export const photos: Photo[] = [
   {
     id: 18,
     imageUrl: "/gallery/6.jpeg",
-    title: "Quiet Allotment Harvest",
-    caption:
-      "“Record-breaking pumpkins and a basket full of sweet heirloom tomatoes.”",
-    year: "2021",
+    title: "Sri Lankans in türkiye",
+    caption: "“Establishing proud Sri Lankan identity across oceans”",
+    year: "2024",
     rotation: 1.3,
     tapeTone: "blush",
   },
-
-  // {
-  //   id: 22,
-  //   imageUrl: "/gallery/10.jpg",
-  //   title: "Wedding memories",
-  //   caption: "“”",
-  //   year: "2024",
-  //   rotation: 1,
-  //   tapeTone: "terracotta",
-  // },
+  {
+    id: 27,
+    imageUrl: "/gallery/34.jpeg",
+    title: "Timeless Connections",
+    caption: "“Different generations, one big family and a whole lot of love”",
+    year: "2021",
+    rotation: 1.3,
+    tapeTone: "gold",
+  },
 ];
