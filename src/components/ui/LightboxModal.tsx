@@ -113,7 +113,7 @@ export default function LightboxModal({
           >
             <WashiTape
               tone={photo.tapeTone ?? "terracotta"}
-              label="Vintage Kodak Archive"
+              label="From The Archive"
               rotation={1}
               className="absolute -top-3 left-1/2 z-20 -translate-x-1/2 h-6 w-fit"
             />
