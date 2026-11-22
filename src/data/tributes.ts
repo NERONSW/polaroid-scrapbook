@@ -263,6 +263,24 @@ export const tributes: Tribute[] = [
     authorImageCaption: "",
   },
   {
+    id: 32,
+    author: "Sripali and family",
+    relation: "",
+    title: "",
+    content: `Happy 60th Birthday, Thilakasiri! 🎂🎉💙
+              Wishing you a wonderful 60th birthday filled with happiness, laughter and beautiful memories.
+              You are truly a good, honest and kind-hearted person. Your sincerity, kindness and positive attitude make you a special person who is appreciated by everyone around you.
+              May this new chapter of life bring you good health, endless happiness, success and many more wonderful moments.
+              Have a fantastic 60th birthday! 🎉💙`,
+    language: "en",
+    tapeText: "",
+    tapeColor: "pink",
+    tag: "",
+    signature: "— Sripali and family",
+    authorImage: "",
+    authorImageCaption: "",
+  },
+  {
     id: 10,
     author: "Eranda Mahagamage",
     relation: "",

@@ -33,64 +33,75 @@ export interface Photo {
 
 export const photos: Photo[] = [
   {
-    id: 1,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBI_wPVWZbcFfFe_VKiNjaT2rx0oNRCQtpl1W4pzvIEJ4OW07Mf1K-TRGHSo9CJ62BhIwsaFbOsEz0pepqW0lkCwvAHXQYZh-wKZaw6ADrUJvLdK3zFPQFGWp_VxnBbaVbec4L2OaPkpl3volBmuG7PHsMjkYnWczTnNnc6en8LztmZk6JlRL3yyVqbIBnu9Beklc6-N8OOUQofzdwKQbBlP2BNYub_GAtH6Sq0IZwa",
-    title: "Arthur’s First Steps in St. Albans",
+    id: 23,
+    imageUrl: "/gallery/15.jpeg",
+    title: "චූටි උක්කුන්",
+    caption: "“ජීවිතය දුන් ආදරබර හෝඩිය පන්තියේ ගුරුතුමිය.”",
+    year: "2025",
+    rotation: 1,
+    tapeTone: "terracotta",
+  },
+  {
+    id: 24,
+    imageUrl: "/gallery/17.jpeg",
+    title: "The Day Forever Began",
     caption:
-      "“Curious eyes, woolen booties, and an endless desire to explore every garden patch.”",
-    year: "1964",
+      "“The foundation of our home, our laughter, and everything we are today..”",
+    year: "1996",
+    rotation: 1,
+    tapeTone: "blush",
+  },
+  {
+    id: 1,
+    imageUrl: "/gallery/14.jpeg",
+    title: "His Majesty the King and Her Majesty the Queen",
+    caption: "“Beneath the Melbourne skies, on a trip to Geelong.”",
+    year: "2026",
     rotation: -1.5,
     tapeTone: "terracotta",
   },
   {
     id: 2,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMHR_jTV18Ir_oUSC8-J2js6p7vNNSIaZaffX_jiST5lwoisxQOLVTRds5MhzLWxgWflX677Ugkr7dYSpAwrRNLfsAte1L_Qt0rIoWJziFsboN0dR1fFgG3jJ_aw4-196Tg4zwfvWyx7k8pqS75TKef7DMl-KvBkieUaYPVJW6StpyaqJQC6M91BA9sVBwSwGtEigHTRbvbzrewM91MRydcH_HvbzHoTR9hMzna1l",
-    title: "Arthur's First Big Bike Ride",
+    imageUrl: "/gallery/22.jpeg",
+    title: "Proud dad moment",
     caption:
-      "“Wind in the hair, salt spray in the air, and training wheels finally tossed away.”",
-    year: "1970",
+      "“Two daughters, two degrees, and one Dad who still insists he taught us everything we know”",
+    year: "2024",
     rotation: 2,
     tapeTone: "gold",
   },
   {
     id: 3,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAuO0eSBj6EQVnBtKE0NivIjsiZdg5Xa7N-aeJNLTrMb6FU-QBM4TmncYjdEk7x6XZlZsEjy8kRedYGyJUIwUpRoC4aM5o4HqO9eQa6tCwkGhHEI_h322IehxgTNqZB-X1zzkZtPGwB7JxeIibhedJRFreGDm5FOOCjby-9TI1XBy5hxSEpEt2aw-ChRfVKD9LqOZKspZ5aRJ37OuQIMXyjegsWH0jZN6XHvzF7umk5",
-    title: "Devon Coast Summer Holiday",
+    imageUrl: "/gallery/23.jpeg",
+    title: "Proud dad moment",
     caption:
-      "“Eating melted butterscotch ice cream by the stone lighthouse with sister Elena.”",
-    year: "1975",
+      "“Two daughters, two degrees, and one Dad who still insists he taught us everything we know”",
+    year: "2025",
     rotation: -1,
     tapeTone: "blush",
   },
   {
     id: 4,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCAaC7F3tQgdzDpsSzKQs4hPNMa5Auel9X56P2zDgOFh7uQHJs-SMSd-RsbNmNm3EqkI1qFlArgxPfWs6R9Zt1Kb_hhB8VHSL6CpanBCQW3Vl01qgYZfqZ3B5s08TwjhwV_sYctInMdYBWYF6gxDwCYZXiXsvNYnu_aQKYidRLw5rSI9sqPwESzp7TBmrHJztE5Iqyt4Unp2MwD-jKAwSvS0NrJ5NYGU1ij-XP8ubow",
-    title: "Marcus & Art: University Days",
-    caption:
-      "“Shared flats, philosophical debates until 3 AM, and burnt toast dinners.”",
-    year: "1978",
+    imageUrl: "/gallery/24.jpeg",
+    title: "Growing the Roster",
+    caption: "“Started with four, upgraded to six”",
+    year: "2026",
     rotation: 1.5,
     tapeTone: "terracotta",
   },
   {
     id: 5,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB7eKovRDP396zt0iJf33x2pFjYC7Cn7tansSOCI7xT7AOgBc1ZR-qa4gXReKN0RsZ-yptSV02mMIo3G5ZgF8_8Mykz5tlcxEq4DEGh8vQBixBsU41jbNxcZxQMX-RDfj9qp1LdGP-PfKNOLrSM0wzNQokjbw5Bb3YbMg4w_6Q7gxbwlvl0Etc5d8cK9U97gO7FuIrYLrWZrm_uZFFmP-CHCCLff3N2PdOntblw-SJo",
-    title: "Oxford Graduation Day ♥",
-    caption:
-      "“The first in the family to hold the scroll. Proud parents beaming through tears.”",
-    year: "1984",
-    rotation: -2,
-    tapeTone: "gold",
+    imageUrl: "/gallery/25.jpeg",
+    title: "Amma and Thaththa",
+    caption: "“Morning gossip sessions”",
+    year: "2018",
+    rotation: 1,
+    tapeTone: "terracotta",
   },
   {
     id: 6,
     imageUrl: "/gallery/2.jpeg",
-    title: "Amma and Thaththa",
+    title: "ජනාවලෝකනය",
     caption: "“දිනක් උදෑසනක රටවැසියන් කෙරෙහි අනුකම්පාවෙන්...”",
     year: "2018",
     rotation: 1,
@@ -98,30 +109,25 @@ export const photos: Photo[] = [
   },
   {
     id: 7,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuANCYv2mjubZIs36JUX7jE3BzBLIKCDlqULj0f87ly-G-TPlQn3KZSIol1yAhq-z_v_eIKdURBjvSa4oXqXSy6URNjuBq0qwP0QIxV1mjadULQsX5sZhqsN5-C7TR8Myhn0GVEWeSFX5KXnwpd1-r4ASR-2F1GV1oUKtfhOuEihwPUC3MQV8rw1Q1cnqrzHonCpyfHyp0CXR-l7iU-nu7oyBuiPu3FiXll3Bvp8THml",
-    title: "First House: Moving into Elmwood",
-    caption:
-      "“Paint splatters on your overalls and painting our first living room forest green.”",
-    year: "1991",
+    imageUrl: "/gallery/4.jpeg",
+    title: "On the way to Diyathalawa",
+    caption: "“With their second set of kids, Chami & Maheesha.”",
+    year: "2024",
     rotation: -1.5,
     tapeTone: "blush",
   },
   {
     id: 8,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAuO0eSBj6EQVnBtKE0NivIjsiZdg5Xa7N-aeJNLTrMb6FU-QBM4TmncYjdEk7x6XZlZsEjy8kRedYGyJUIwUpRoC4aM5o4HqO9eQa6tCwkGhHEI_h322IehxgTNqZB-X1zzkZtPGwB7JxeIibhedJRFreGDm5FOOCjby-9TI1XBy5hxSEpEt2aw-ChRfVKD9LqOZKspZ5aRJ37OuQIMXyjegsWH0jZN6XHvzF7umk5",
-    title: "Welcoming Clara into the World",
-    caption:
-      "“A bundle smaller than your forearm, held by the most loving new father.”",
-    year: "1993",
+    imageUrl: "/gallery/30.jpeg",
+    title: "කියවීමේ කලාව",
+    caption: "“කියවනවා වගේ ඉන්න ඕනේ”",
+    year: "2018",
     rotation: 1.2,
     tapeTone: "gold",
   },
   {
     id: 9,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCVdzjmoK99GcrgPNv2F2rpm8m92aJNDdTldRZ5FOf_1JpjhBmKQFm9f5cFZ2EZpoiryfX2CpPQlMkv2xvsiNGzcPI9wsRd1ATdP2XK1sY-NSTA_W17tqqKNGMDkJgUCtkEGUtG1kKD2-KJHGSzU8K8JqW4ZCDY3LNEVj-jCtlMDJXL0Qnd7kfmEhgH2YIWglL4P5M0W_23osVXfIcuwtthUl6Ysrw1DETTGNXLch-9",
+    imageUrl: "/gallery/29.jpeg",
     title: "Julian’s First Camping Trip",
     caption:
       "“Roasting marshmallows over the fire and teaching young Julian constellations.”",
@@ -131,8 +137,7 @@ export const photos: Photo[] = [
   },
   {
     id: 10,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCVdzjmoK99GcrgPNv2F2rpm8m92aJNDdTldRZ5FOf_1JpjhBmKQFm9f5cFZ2EZpoiryfX2CpPQlMkv2xvsiNGzcPI9wsRd1ATdP2XK1sY-NSTA_W17tqqKNGMDkJgUCtkEGUtG1kKD2-KJHGSzU8K8JqW4ZCDY3LNEVj-jCtlMDJXL0Qnd7kfmEhgH2YIWglL4P5M0W_23osVXfIcuwtthUl6Ysrw1DETTGNXLch-9",
+    imageUrl: "/gallery/28.jpeg",
     title: "Chess by the Hearth with the Kids",
     caption:
       "“Patience and grace across 64 squares while the winter gale rattled outside.”",
@@ -142,8 +147,7 @@ export const photos: Photo[] = [
   },
   {
     id: 11,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuANCYv2mjubZIs36JUX7jE3BzBLIKCDlqULj0f87ly-G-TPlQn3KZSIol1yAhq-z_v_eIKdURBjvSa4oXqXSy6URNjuBq0qwP0QIxV1mjadULQsX5sZhqsN5-C7TR8Myhn0GVEWeSFX5KXnwpd1-r4ASR-2F1GV1oUKtfhOuEihwPUC3MQV8rw1Q1cnqrzHonCpyfHyp0CXR-l7iU-nu7oyBuiPu3FiXll3Bvp8THml",
+    imageUrl: "/gallery/19.jpeg",
     title: "Building the Garden Woodshop",
     caption:
       "“Every timber squared by your own hands. Cedar shavings smelling like autumn.”",
@@ -153,8 +157,7 @@ export const photos: Photo[] = [
   },
   {
     id: 12,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuANCYv2mjubZIs36JUX7jE3BzBLIKCDlqULj0f87ly-G-TPlQn3KZSIol1yAhq-z_v_eIKdURBjvSa4oXqXSy6URNjuBq0qwP0QIxV1mjadULQsX5sZhqsN5-C7TR8Myhn0GVEWeSFX5KXnwpd1-r4ASR-2F1GV1oUKtfhOuEihwPUC3MQV8rw1Q1cnqrzHonCpyfHyp0CXR-l7iU-nu7oyBuiPu3FiXll3Bvp8THml",
+    imageUrl: "/gallery/9.jpg",
     title: "Father & Son: First Oak Blanket Chest",
     caption:
       "“Dovetail joints cut by hand. A workshop moment sealed into living history.”",
@@ -164,8 +167,7 @@ export const photos: Photo[] = [
   },
   {
     id: 13,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCAaC7F3tQgdzDpsSzKQs4hPNMa5Auel9X56P2zDgOFh7uQHJs-SMSd-RsbNmNm3EqkI1qFlArgxPfWs6R9Zt1Kb_hhB8VHSL6CpanBCQW3Vl01qgYZfqZ3B5s08TwjhwV_sYctInMdYBWYF6gxDwCYZXiXsvNYnu_aQKYidRLw5rSI9sqPwESzp7TBmrHJztE5Iqyt4Unp2MwD-jKAwSvS0NrJ5NYGU1ij-XP8ubow",
+    imageUrl: "/gallery/11.jpg",
     title: "Lake District Rambles with Mac",
     caption:
       "“Wind blowing mist across Derwentwater. Tea never tasted as glorious.”",
@@ -175,30 +177,25 @@ export const photos: Photo[] = [
   },
   {
     id: 14,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAerGh59XzscT6NQvhXus_w3NJahsNuihfU6pjMZqQ_HA1Fu0urUcX4Hb_-SQQdIltArwG9DaWvMyDB_9rfLa2Tsjukl_7QR8XNPEZr--KncZdbK_Bpxu_hN9mgfecWtiyttmZm8-DOvdKygmbArvwJMbpIfPLW9R6Oc4iSFk5mrFRM9cKqEQm2kIRcTbZX81YCXw6Oo7Q6kS3kxEn3RozosC4iVfRx0qSCw5qvGBgw",
-    title: "Silver Wedding Anniversary in Florence",
-    caption:
-      "“Holding Sarah's hand along the Ponte Vecchio at twilight. Twenty-five years young.”",
-    year: "2010",
+    imageUrl: "/gallery/12.jpeg",
+    title: "Birthday Wishes",
+    caption: "“From Sripali and family”",
+    year: "2026",
     rotation: 2,
     tapeTone: "terracotta",
   },
   {
     id: 15,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAlLKnUu_UzBH_whJmmIBwO0nsVE0PBczg8aXcV5aaUGGbAKPLnhnbcbeDOtkdAxjQcznyt96g5I1UBxL0cAZ9qv3i_M9IxpIjD8kZ079_7S7mCRWHjEkqvbgpB9FNm7e82yALFD5vJ4DxrURS-1DAjKRRfZeygcDpP7u_RIBIqvQsEtNvgAnpv-STjSk1jYz_XXaw5gNpc_DsmNXZRcBeEMqOOt19ODz0pte3HDRwT",
-    title: "Arthur’s 50th Birthday Surprise!",
-    caption:
-      "“When all fifty guests hid behind the garage shrubs with noisemakers.”",
+    imageUrl: "/gallery/5.jpeg",
+    title: "Lost in the türkiye",
+    caption: "“Where ancient ruins meet the sea”",
     year: "2014",
     rotation: -1.2,
     tapeTone: "blush",
   },
   {
     id: 16,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB7eKovRDP396zt0iJf33x2pFjYC7Cn7tansSOCI7xT7AOgBc1ZR-qa4gXReKN0RsZ-yptSV02mMIo3G5ZgF8_8Mykz5tlcxEq4DEGh8vQBixBsU41jbNxcZxQMX-RDfj9qp1LdGP-PfKNOLrSM0wzNQokjbw5Bb3YbMg4w_6Q7gxbwlvl0Etc5d8cK9U97gO7FuIrYLrWZrm_uZFFmP-CHCCLff3N2PdOntblw-SJo",
+    imageUrl: "/gallery/8.jpg",
     title: "Clara’s Wedding Day: Father of the Bride",
     caption:
       "“A tear in your eye and an unforgettable waltz that had everybody crying.”",
@@ -208,8 +205,7 @@ export const photos: Photo[] = [
   },
   {
     id: 17,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAuO0eSBj6EQVnBtKE0NivIjsiZdg5Xa7N-aeJNLTrMb6FU-QBM4TmncYjdEk7x6XZlZsEjy8kRedYGyJUIwUpRoC4aM5o4HqO9eQa6tCwkGhHEI_h322IehxgTNqZB-X1zzkZtPGwB7JxeIibhedJRFreGDm5FOOCjby-9TI1XBy5hxSEpEt2aw-ChRfVKD9LqOZKspZ5aRJ37OuQIMXyjegsWH0jZN6XHvzF7umk5",
+    imageUrl: "/gallery/7.png",
     title: "Grandpa Arthur Meets Maya",
     caption:
       "“The gentlest giant. You cradled her tiny head and whispered lifelong promises.”",
@@ -219,8 +215,7 @@ export const photos: Photo[] = [
   },
   {
     id: 18,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAerGh59XzscT6NQvhXus_w3NJahsNuihfU6pjMZqQ_HA1Fu0urUcX4Hb_-SQQdIltArwG9DaWvMyDB_9rfLa2Tsjukl_7QR8XNPEZr--KncZdbK_Bpxu_hN9mgfecWtiyttmZm8-DOvdKygmbArvwJMbpIfPLW9R6Oc4iSFk5mrFRM9cKqEQm2kIRcTbZX81YCXw6Oo7Q6kS3kxEn3RozosC4iVfRx0qSCw5qvGBgw",
+    imageUrl: "/gallery/6.jpeg",
     title: "Quiet Allotment Harvest",
     caption:
       "“Record-breaking pumpkins and a basket full of sweet heirloom tomatoes.”",
@@ -230,8 +225,7 @@ export const photos: Photo[] = [
   },
   {
     id: 19,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAuO0eSBj6EQVnBtKE0NivIjsiZdg5Xa7N-aeJNLTrMb6FU-QBM4TmncYjdEk7x6XZlZsEjy8kRedYGyJUIwUpRoC4aM5o4HqO9eQa6tCwkGhHEI_h322IehxgTNqZB-X1zzkZtPGwB7JxeIibhedJRFreGDm5FOOCjby-9TI1XBy5hxSEpEt2aw-ChRfVKD9LqOZKspZ5aRJ37OuQIMXyjegsWH0jZN6XHvzF7umk5",
+    imageUrl: "/gallery/21.jpeg",
     title: "Storytime Under the Bedside Lamp",
     caption:
       "“Doing all the voices from the Peter Rabbit books until Maya fell asleep.”",
@@ -241,8 +235,7 @@ export const photos: Photo[] = [
   },
   {
     id: 20,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAlLKnUu_UzBH_whJmmIBwO0nsVE0PBczg8aXcV5aaUGGbAKPLnhnbcbeDOtkdAxjQcznyt96g5I1UBxL0cAZ9qv3i_M9IxpIjD8kZ079_7S7mCRWHjEkqvbgpB9FNm7e82yALFD5vJ4DxrURS-1DAjKRRfZeygcDpP7u_RIBIqvQsEtNvgAnpv-STjSk1jYz_XXaw5gNpc_DsmNXZRcBeEMqOOt19ODz0pte3HDRwT",
+    imageUrl: "/gallery/31.jpeg",
     title: "Arthur's Famous Summer Backyard BBQ",
     caption:
       "“Grilling apron on, secret seasoning mix, and laughter rolling across the lawn.”",
@@ -252,19 +245,16 @@ export const photos: Photo[] = [
   },
   {
     id: 21,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAerGh59XzscT6NQvhXus_w3NJahsNuihfU6pjMZqQ_HA1Fu0urUcX4Hb_-SQQdIltArwG9DaWvMyDB_9rfLa2Tsjukl_7QR8XNPEZr--KncZdbK_Bpxu_hN9mgfecWtiyttmZm8-DOvdKygmbArvwJMbpIfPLW9R6Oc4iSFk5mrFRM9cKqEQm2kIRcTbZX81YCXw6Oo7Q6kS3kxEn3RozosC4iVfRx0qSCw5qvGBgw",
-    title: "Autumn Tea in the Garden Nook",
-    caption:
-      "“A calm October afternoon with Arthur savoring Earl Grey and birdsong.”",
+    imageUrl: "/gallery/16.jpeg",
+    title: "හබුන් කටයි බත් දෙකටයි",
+    caption: "“අම්මා ළඟදී තාම හුරතල් වෙන චූටි උක්කුන්”",
     year: "2023",
     rotation: -1.4,
     tapeTone: "gold",
   },
   {
     id: 22,
-    imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAerGh59XzscT6NQvhXus_w3NJahsNuihfU6pjMZqQ_HA1Fu0urUcX4Hb_-SQQdIltArwG9DaWvMyDB_9rfLa2Tsjukl_7QR8XNPEZr--KncZdbK_Bpxu_hN9mgfecWtiyttmZm8-DOvdKygmbArvwJMbpIfPLW9R6Oc4iSFk5mrFRM9cKqEQm2kIRcTbZX81YCXw6Oo7Q6kS3kxEn3RozosC4iVfRx0qSCw5qvGBgw",
+    imageUrl: "/gallery/10.jpg",
     title: "The Milestone: Sixty Years Young",
     caption:
       "“Surrounded by sixty years of love, grandchildren on knees, and hearts full.”",
