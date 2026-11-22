@@ -49,7 +49,7 @@ export default function PolaroidCard({
       <WashiTape
         tone={photo.tapeTone ?? "terracotta"}
         rotation={-1}
-        className="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-5"
+        className="absolute -top-3 left-1/2 z-20 -translate-x-1/2 w-20 h-5"
       />
 
       {/* Image container with vintage darkroom mounting corners */}

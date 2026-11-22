@@ -9,7 +9,6 @@ import {
   tributes,
   type Tribute,
 } from "@/data/tributes";
-import type { WashiTone } from "@/data/photos";
 import WashiTape from "@/components/ui/WashiTape";
 
 // Deterministic organic micro-rotations (DESIGN.md §4: -1.5deg → +2.0deg).
@@ -24,40 +23,97 @@ const CARD_ROTATIONS = [
   "rotate-[0.9deg]",
 ] as const;
 
-const WASHI_TONES: WashiTone[] = ["terracotta", "gold", "blush"];
+// Small tilt variety for the mini-polaroid author portraits.
+const PORTRAIT_TILTS = [
+  "rotate-2",
+  "rotate-[-3deg]",
+  "rotate-[1.5deg]",
+  "rotate-[-2deg]",
+] as const;
+
+function AuthorPortrait({
+  tribute,
+  index,
+}: {
+  tribute: Tribute;
+  index: number;
+}) {
+  const initial = tribute.author.trim().charAt(0).toUpperCase();
+
+  return (
+    <div
+      className={clsx(
+        "w-16 shrink-0 rounded-xs border border-outline-hairline bg-surface-container-lowest p-1 shadow-sm",
+        PORTRAIT_TILTS[index % PORTRAIT_TILTS.length],
+      )}
+    >
+      <div className="relative aspect-square w-full overflow-hidden bg-surface-container">
+        {tribute.authorImage ? (
+          <img
+            src={tribute.authorImage}
+            alt={`${tribute.author} portrait`}
+            loading="lazy"
+            className="h-full w-full object-cover sepia-[0.08]"
+          />
+        ) : (
+          /* Charming archival monogram fallback when no photo is provided. */
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 flex items-center justify-center font-cursive text-2xl leading-none text-on-surface-muted"
+          >
+            {initial}
+          </span>
+        )}
+      </div>
+
+      <div className="pt-0.5 text-center font-body text-[9px] italic leading-tight text-on-surface-muted">
+        {tribute.authorImageCaption || " "}
+      </div>
+    </div>
+  );
+}
 
 function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
+  const hasTape = Boolean(tribute.tapeText);
+  const hasTag = Boolean(tribute.tag);
+
   return (
     <motion.article
       className={clsx(
-        "relative mb-6 break-inside-avoid border border-outline-hairline bg-surface-container-lowest p-6 shadow-md transition-transform duration-300 hover:rotate-0",
-        CARD_ROTATIONS[index % CARD_ROTATIONS.length]
+        "relative mb-6 break-inside-avoid border border-outline-hairline bg-surface-container-lowest px-6 pb-6 shadow-md transition-transform duration-300 hover:rotate-0",
+        hasTape ? "pt-12" : "pt-6",
+        CARD_ROTATIONS[index % CARD_ROTATIONS.length],
       )}
       initial={{ opacity: 0, y: 14 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.45, ease: "easeOut" }}
     >
-      {tribute.badge && (
+      {hasTape && (
         <WashiTape
-          tone={WASHI_TONES[index % WASHI_TONES.length]}
-          label={tribute.badge}
+          tone={tribute.tapeColor ?? "terracotta"}
+          label={tribute.tapeText}
           rotation={-1.5}
-          className="absolute -top-3 left-6 h-5 w-24"
+          className="absolute top-1 left-6 z-30 h-5 w-fit"
         />
       )}
 
       <div className="space-y-3">
-        <div>
-          <span className="block font-sans text-[11px] font-bold uppercase tracking-wider text-primary">
-            {tribute.author}
-          </span>
-          <span className="font-body text-xs italic text-on-surface-muted">
-            {tribute.relation}
-          </span>
-          <h3 className="mt-1 font-headline text-lg text-on-surface-espresso">
-            {tribute.title}
-          </h3>
+        <div className="flex items-start justify-between gap-3">
+          <div className="min-w-0">
+            <span className="block font-sans text-[11px] font-bold uppercase tracking-wider text-primary">
+              {tribute.author}
+            </span>
+            <span className="font-body text-xs italic text-on-surface-muted">
+              {tribute.relation}
+            </span>
+            <h3 className="mt-1 font-headline text-lg text-on-surface-espresso">
+              {tribute.title}
+            </h3>
+          </div>
+
+          {/* Upper-right mini-polaroid author portrait. */}
+          <AuthorPortrait tribute={tribute} index={index} />
         </div>
 
         {/* lang="si" switches on Noto Serif Sinhala + 1.85 line-height via globals.css */}
@@ -68,10 +124,17 @@ function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
           {tribute.content}
         </p>
 
-        <div className="flex items-center justify-between border-t border-dashed border-outline-hairline/60 pt-2">
-          <span className="bg-surface-container px-2 py-0.5 font-sans text-[10px] font-semibold uppercase tracking-wider text-secondary">
-            {tribute.tag}
-          </span>
+        <div
+          className={clsx(
+            "flex items-center border-t border-dashed border-outline-hairline/60 pt-2",
+            hasTag ? "justify-between" : "justify-end",
+          )}
+        >
+          {hasTag && (
+            <span className="bg-surface-container px-2 py-0.5 font-sans text-[10px] font-semibold uppercase tracking-wider text-secondary">
+              {tribute.tag}
+            </span>
+          )}
           <span className="font-cursive text-lg text-primary">
             {tribute.signature}
           </span>
@@ -114,7 +177,7 @@ export default function WishesSection() {
       </motion.div>
 
       {/* 1 → 2 → 3 column masonry of tribute cards */}
-      <div className="columns-1 gap-6 md:columns-2 lg:columns-3">
+      <div className="columns-1 gap-6 md:columns-2 lg:columns-3 space-y-0">
         {coreTributes.map((tribute, index) => (
           <TributeCard key={tribute.id} tribute={tribute} index={index} />
         ))}
@@ -135,7 +198,7 @@ export default function WishesSection() {
           type="button"
           onClick={() => setExpanded((value) => !value)}
           aria-expanded={expanded}
-          className="inline-flex min-h-[48px] items-center gap-2 rounded-full border border-outline-hairline bg-surface-container-lowest px-6 py-3 font-sans text-sm font-semibold text-primary shadow-md transition-all duration-300 hover:bg-surface-container hover:shadow-lg"
+          className="inline-flex min-h-12 items-center gap-2 rounded-full border border-outline-hairline bg-surface-container-lowest px-6 py-3 font-sans text-sm font-semibold text-primary shadow-md transition-all duration-300 hover:bg-surface-container hover:shadow-lg"
         >
           <span>
             {expanded
@@ -145,7 +208,7 @@ export default function WishesSection() {
           <ChevronDown
             className={clsx(
               "h-5 w-5 transition-transform duration-300",
-              expanded && "rotate-180"
+              expanded && "rotate-180",
             )}
             aria-hidden="true"
           />

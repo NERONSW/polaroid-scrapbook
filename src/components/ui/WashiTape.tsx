@@ -21,18 +21,31 @@ const TONE_CLASS: Record<WashiTone, string> = {
   terracotta: "washi-tape--terracotta",
   gold: "washi-tape--gold",
   blush: "washi-tape--blush",
+  amber: "washi-tape--amber",
+  emerald: "washi-tape--emerald",
+  pink: "washi-tape--pink",
 };
 
 const SOLID_TONE_CLASS: Record<WashiTone, string> = {
   terracotta: "washi-tape--terracotta-solid",
   gold: "washi-tape--gold-solid",
   blush: "washi-tape--blush-solid",
+  amber: "washi-tape--amber-solid",
+  emerald: "washi-tape--emerald-solid",
+  pink: "washi-tape--pink-solid",
 };
 
+// Ink pairing chosen for contrast against each tone's *rendered* backdrop.
+// Every tape is a translucent/pastel tint over white stock, so most tones take
+// deep espresso ink for legibility. terracotta is the one strong hue and keeps
+// crisp ivory text (its `-solid` variant drives the hero banner badge).
 const LABEL_TONE: Record<WashiTone, string> = {
   terracotta: "text-white",
-  gold: "text-secondary",
-  blush: "text-on-surface-umber",
+  gold: "text-on-surface-espresso",
+  blush: "text-on-surface-espresso",
+  amber: "text-on-surface-espresso",
+  emerald: "text-on-surface-espresso",
+  pink: "text-on-surface-espresso",
 };
 
 export default function WashiTape({
@@ -47,13 +60,13 @@ export default function WashiTape({
   return (
     <span
       aria-hidden={label == null ? true : undefined}
-      className={clsx("washi-tape", toneClass, "h-5 px-3", className)}
+      className={clsx("washi-tape", toneClass, "min-h-6 px-3.5 py-1", className)}
       style={{ rotate: `${rotation}deg` }}
     >
       {label != null && (
         <span
           className={clsx(
-            "whitespace-nowrap font-sans text-[10px] uppercase leading-none tracking-widest",
+            "whitespace-nowrap font-sans text-[10px] font-semibold uppercase leading-snug tracking-widest antialiased",
             LABEL_TONE[tone]
           )}
         >

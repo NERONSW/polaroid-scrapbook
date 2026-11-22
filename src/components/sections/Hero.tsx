@@ -83,11 +83,13 @@ export default function Hero() {
 
         <div className="space-y-4 font-body text-lg leading-relaxed text-on-surface-umber">
           <p>
-            Gathered here in one safe place: sixty years of stories, Sunday
-            dinners, quiet sacrifices, and unending warmth. From late-night
-            bicycle repairs in the damp garden shed to tender lullabies sung
-            under the attic rafters, you have built our entire world with gentle
-            hands.
+            Gathered here in one safe place: sixty years of stories, laughter,
+            quiet sacrifices, and endless warmth. From falling asleep to your
+            stories, to asking you a thousand questions and always finding an
+            answer, you made the world feel safe and full of wonder. Through
+            your wisdom, patience, and love, you gave us a home, a childhood to
+            cherish, and the comfort of knowing that, no matter what, everything
+            would be alright with you ❤️
           </p>
 
           <div className="relative border-l-4 border-primary bg-surface-container-low p-5 shadow-sm">
@@ -119,7 +121,7 @@ export default function Hero() {
               className="h-4.5 w-4.5 text-secondary"
               aria-hidden="true"
             />
-            <span>October 24, 2024</span>
+            <span>November 26, 2026</span>
           </div>
           <span className="text-outline-hairline" aria-hidden="true">
             •
