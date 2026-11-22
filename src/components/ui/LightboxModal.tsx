@@ -115,7 +115,7 @@ export default function LightboxModal({
               tone={photo.tapeTone ?? "terracotta"}
               label="Vintage Kodak Archive"
               rotation={1}
-              className="absolute -top-3 left-1/2 z-20 -translate-x-1/2 h-6 w-36"
+              className="absolute -top-3 left-1/2 z-20 -translate-x-1/2 h-6 w-fit"
             />
 
             <div className="relative flex max-h-[60vh] w-full items-center justify-center overflow-hidden border border-outline-hairline bg-surface-container">
