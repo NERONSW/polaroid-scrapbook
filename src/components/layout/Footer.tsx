@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-4 font-sans text-[10px] uppercase tracking-widest text-on-surface-muted">
-          Archived 2026 • Melbourne • Kept in Living Memory
+          Archived 2026 • Sri Lanka • Kept in Living Memory
         </div>
       </div>
     </footer>

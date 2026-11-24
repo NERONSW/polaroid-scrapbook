@@ -188,6 +188,21 @@ export const tributes: Tribute[] = [
     authorImageCaption: "",
   },
   {
+    id: 33,
+    author: "Nethmi and Kevin",
+    relation: "",
+    title: "",
+    content:
+      "Happy 60th Birthday, Bappi! ❤️ Wishing you good health and happiness. May this milestone birthday bring you lots of love, laughter and beautiful memories with family and friends. Hope you have an amazing day celebrating! Lots of love.",
+    language: "en",
+    tapeText: "",
+    tapeColor: "terracotta",
+    tag: "",
+    signature: "— Nethmi and Kevin",
+    authorImage: "",
+    authorImageCaption: "",
+  },
+  {
     id: 12,
     author: "Maheesha Sathsarani",
     relation: "",
