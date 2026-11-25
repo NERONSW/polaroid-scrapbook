@@ -122,7 +122,7 @@ function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
         {/* lang="si" switches on Noto Serif Sinhala + 1.85 line-height via globals.css */}
         <p
           lang={tribute.language === "si" ? "si" : undefined}
-          className="font-body text-sm leading-relaxed text-on-surface-umber"
+          className="whitespace-pre-line font-body text-sm leading-relaxed text-on-surface-umber"
         >
           {tribute.content}
         </p>
