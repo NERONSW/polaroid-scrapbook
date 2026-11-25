@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState, type SyntheticEvent } from "react";
+import clsx from "clsx";
 import { AnimatePresence, motion } from "motion/react";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import Image from "next/image";
+import { Camera, ChevronLeft, ChevronRight, X } from "lucide-react";
 import type { Photo } from "@/data/photos";
 import WashiTape from "@/components/ui/WashiTape";
 
@@ -13,6 +15,59 @@ interface LightboxModalProps {
   onClose: () => void;
   onPrev: () => void;
   onNext: () => void;
+}
+
+// Archival "developing" placeholder frame. Rendered as a child of the keyed
+// motion.div (`key={photo.id}`), so its loading state resets synchronously on
+// every open / close / print switch, then clears once the image decodes.
+function PhotoFrame({ photo }: { photo: Photo }) {
+  const [isImageLoading, setIsImageLoading] = useState(true);
+  const [aspect, setAspect] = useState<string | undefined>(undefined);
+
+  const handleLoad = (event: SyntheticEvent<HTMLImageElement>) => {
+    const { naturalWidth, naturalHeight } = event.currentTarget;
+    if (naturalWidth > 0 && naturalHeight > 0) {
+      setAspect(`${naturalWidth} / ${naturalHeight}`);
+    }
+    setIsImageLoading(false);
+  };
+
+  return (
+    <div
+      style={aspect ? { aspectRatio: aspect } : undefined}
+      className="relative flex max-h-[60vh] min-h-[240px] min-w-[260px] w-full items-center justify-center overflow-hidden border border-outline-hairline bg-surface-container sm:min-h-[320px]"
+    >
+      {isImageLoading && (
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-surface-container-low"
+        >
+          <Camera
+            className="h-8 w-8 animate-pulse text-on-surface-muted"
+            aria-hidden="true"
+          />
+          <span className="font-sans text-[10px] font-semibold uppercase tracking-widest text-on-surface-muted">
+            Developing…
+          </span>
+        </div>
+      )}
+
+      <Image
+        src={photo.imageUrl}
+        alt={photo.title}
+        fill
+        sizes="(max-width: 768px) 95vw, 80vw"
+        quality={85}
+        draggable={false}
+        onLoad={handleLoad}
+        onError={() => setIsImageLoading(false)}
+        className={clsx(
+          "object-contain transition-opacity duration-300 ease-out",
+          isImageLoading ? "opacity-0" : "opacity-100"
+        )}
+      />
+    </div>
+  );
 }
 
 export default function LightboxModal({
@@ -118,14 +173,7 @@ export default function LightboxModal({
               className="absolute -top-3 left-1/2 z-20 -translate-x-1/2 h-6 w-fit"
             />
 
-            <div className="relative flex max-h-[60vh] w-full items-center justify-center overflow-hidden border border-outline-hairline bg-surface-container">
-              <img
-                src={photo.imageUrl}
-                alt={photo.title}
-                draggable={false}
-                className="max-h-[60vh] w-full object-contain"
-              />
-            </div>
+            <PhotoFrame photo={photo} />
 
             <div className="w-full space-y-1 pt-4 text-center">
               <div className="flex items-center justify-between px-2 font-sans text-xs">
