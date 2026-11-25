@@ -65,7 +65,26 @@ export const tributes: Tribute[] = [
     authorImage: "",
     authorImageCaption: "",
   },
-
+  {
+    id: 38,
+    author: "Dewni Ekanayaka",
+    relation: "Elder Daughter",
+    title: "",
+    content: `ජීවිතය යනු තනි ඉරක් නොව, රටා රැසකින් පිරුණු අපූරු සිතුවමක් බවත්,
+              ලෝකය පුරා විසිරී ඇති කටුක යථාර්ථයන් අතර මනුෂ්‍යත්වය මහා වටිනාකමක් ගන්නා බවත්,
+              ගන්නා ඕනෑම තීරණයක් නිවැරදි තීරණයක් බවට පත්කර ගැනීමේ හැකියාව අප සතු බවත්,
+              සෑම කෙනෙකුටම තමන්ටම ආවේණික වූ කතාවක් ඇති බවත්,
+              තමන්ගේ විශ්වාසයන් මත පිහිටා නොසැලී ජීවත් විය යුතු බවත්,
+              මට කියා දුන් තාත්තේ...
+              ගඟ දිගේ යන්නට බලා හිඳිමි...`,
+    language: "en",
+    tapeText: "Sanki",
+    tapeColor: "pink",
+    tag: "",
+    signature: "— Sanki",
+    authorImage: "",
+    authorImageCaption: "",
+  },
   {
     id: 36,
     author: "Ovini Ekanayaka",
@@ -81,7 +100,24 @@ export const tributes: Tribute[] = [
     authorImage: "",
     authorImageCaption: "",
   },
-
+  {
+    id: 39,
+    author: "Nipuna Suraj",
+    relation: "",
+    title: "",
+    content: `Happy 60th Birthday, Thaththa!
+              You are truly one of the most remarkable and unique people I’ve ever had the privilege of knowing. The way you see the world, understand people, and approach life is genuinely inspiring. Your knowledge, wisdom, and life experiences never cease to amaze me.
+              Dewni and I feel incredibly lucky to have you in our lives. We are truly grateful for your guidance, support, and the wisdom you share with us. Thank you for always being there for us and for being such an important part of our lives.
+              Wishing you good health, happiness, and many more wonderful years ahead. ❤️
+              \nP.S. All hail the King, තිලක ශ්‍රී ඒකනාථ II ! 👑😂`,
+    language: "en",
+    tapeText: "Nipuna",
+    tapeColor: "blush",
+    tag: "",
+    signature: "— Nipuna Suraj",
+    authorImage: "",
+    authorImageCaption: "",
+  },
   {
     id: 37,
     author: "Thisal Koswanage",
