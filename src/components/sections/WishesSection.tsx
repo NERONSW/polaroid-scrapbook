@@ -3,6 +3,7 @@
 import { useState } from "react";
 import clsx from "clsx";
 import { motion } from "motion/react";
+import Image from "next/image";
 import { ChevronDown, PenLine } from "lucide-react";
 import {
   INITIAL_VISIBLE_TRIBUTE_COUNT,
@@ -49,11 +50,13 @@ function AuthorPortrait({
     >
       <div className="relative aspect-square w-full overflow-hidden bg-surface-container">
         {tribute.authorImage ? (
-          <img
+          <Image
             src={tribute.authorImage}
             alt={`${tribute.author} portrait`}
-            loading="lazy"
-            className="h-full w-full object-cover sepia-[0.08]"
+            fill
+            sizes="4rem"
+            quality={82}
+            className="object-cover sepia-[0.08]"
           />
         ) : (
           /* Charming archival monogram fallback when no photo is provided. */
@@ -86,7 +89,7 @@ function TributeCard({ tribute, index }: { tribute: Tribute; index: number }) {
       )}
       initial={{ opacity: 0, y: 14 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.05 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
     >
       {hasTape && (
@@ -152,7 +155,7 @@ export default function WishesSection() {
   const remainingCount = tributes.length - INITIAL_VISIBLE_TRIBUTE_COUNT;
 
   return (
-    <section id="wishes" className="scroll-mt-20 space-y-8">
+    <section id="wishes" className="scroll-mt-37 md:scroll-mt-20 space-y-8">
       {/* Section header */}
       <motion.div
         className="mx-auto max-w-2xl space-y-2 text-center"

@@ -2,6 +2,7 @@
 
 import clsx from "clsx";
 import { motion } from "motion/react";
+import Image from "next/image";
 import type { Photo } from "@/data/photos";
 import WashiTape from "@/components/ui/WashiTape";
 
@@ -24,7 +25,7 @@ export default function PolaroidCard({
   return (
     <motion.article
       className={clsx(
-        "group relative cursor-pointer border border-outline-hairline bg-surface-container-lowest p-3 pb-6",
+        "group relative cursor-pointer border border-outline-hairline bg-surface-container-lowest p-3 pb-6 transform-gpu",
         "polaroid-shadow",
         className
       )}
@@ -59,12 +60,15 @@ export default function PolaroidCard({
         <span className="mounting-corner mounting-corner--bottom-left" aria-hidden="true" />
         <span className="mounting-corner mounting-corner--bottom-right" aria-hidden="true" />
 
-        <img
+        <Image
           src={photo.imageUrl}
           alt={photo.title}
-          loading="lazy"
+          fill
+          sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+          quality={82}
+          priority={index < 2}
           draggable={false}
-          className="h-full w-full object-cover sepia-[0.08] transition-transform duration-500 group-hover:scale-105"
+          className="object-cover sepia-[0.08] transition-transform duration-500 group-hover:scale-105"
         />
 
         <div className="absolute bottom-1.5 right-1.5 bg-surface-container-lowest/85 px-2 py-0.5 font-sans text-[10px] font-bold text-on-surface-espresso shadow-sm backdrop-blur">

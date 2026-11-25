@@ -65,6 +65,42 @@ export const tributes: Tribute[] = [
     authorImage: "",
     authorImageCaption: "",
   },
+
+  {
+    id: 36,
+    author: "Ovini Ekanayaka",
+    relation: "Younger Daughter",
+    title: "",
+    content: `Hi Thaththa,
+    I cant believe you are 60 already.  I still remember making a card for your 50th Birthday, in 2016, couple of weeks before you finished your work at Qatar and moved back to Lanka. Growing up was so much fun with you and Im extremely grateful for it. I know raising two daughters wasnt the easiest. You were never extremely strict with us but you always made sure we had the right values at our core. Yhe best part of my childhood was the bedtime stories. Every day before i went to bed up until I was 11 or 12 years old, you would tell us a story before bed, and then through skype when you moved abroad.  Me and akki always talk about the passion you have for everything you do and everyday life. Even now, you would be amazed at something, the way someone works and you would tell us. Growing up every day after school you would listen to me speak about everything that happened to me at school and my day. Even when i moved to australia, you always made time to listen my stories and i always look forward for our daily call at your lunch time. You always endlessly supported our dreams and made sure to push us in to the right direction.  We used to say thaththa made election promises as he would say yes to all our absurd childhood ideas and then say no when we ask him for it. Thaththa made an election promise years ago to take us camping. it involved walking in waters knee deep, and coming to camping grounds, and eating Smores and thaththas rrice and curry. I hope 60is where we stop witht he elction promises and act it out. I can’t wait to see you travel the world and travel the world with you where i can. Im excited to whats coming ahead. I hope you stay happu amd i hope you know you have succeeded in life in every way person. Most importantly thank you for being a dad i could love whole heartedly and look up to in every aspect of life. I love you thaththa.`,
+    language: "en",
+    tapeText: "Ovi",
+    tapeColor: "gold",
+    tag: "",
+    signature: "— Ovi",
+    authorImage: "",
+    authorImageCaption: "",
+  },
+
+  {
+    id: 37,
+    author: "Thisal Koswanage",
+    relation: "",
+    title: "",
+    content: `Happy Birthday Thaththa
+              I hope you have an amazing day. Thankyou for being such an incredible Thaththa. Ovi and I are so lucky to have you in our lives and are so grateful.
+              Hearing and seeing your career journey and how it has progressed has been one of inspiration for me. One of the things I will always cherish are our conversations on different construction techniques and methods. I really enjoy discussing things we have both come across in the construction world that we are able to relate to. On top of that, I enjoy learning about other different methods that you have explained to me that I have still not encountered. I find these chats fascinating and intriguing. 
+              Seeing, hearing and understanding your journey has been amazing. Something that I have always admired is how you have been able to manage your busy work schedule with other activities including lecturing and writing. Above all what I admire most is your caring nature. You have a positive impact on everyone you interact with and that is a testament to the special person you are. 
+              Thankyou for being the most amazing Thaththa.
+              Love Thisal`,
+    language: "en",
+    tapeText: "Thisal",
+    tapeColor: "terracotta",
+    tag: "",
+    signature: "— Thisal Koswanage",
+    authorImage: "",
+    authorImageCaption: "",
+  },
   {
     id: 32,
     author: "Kithsiri Ekanayaka",
@@ -157,6 +193,26 @@ export const tributes: Tribute[] = [
     authorImage: "",
     authorImageCaption: "",
   },
+
+  {
+    id: 35,
+    author: "Sanuvi Inhara",
+    relation: "",
+    title: "",
+    content: `Happy Birthday to our Kadawatha Superman!!
+        Sometimes I wish we could turn back time and relive those old days all over again. All of us hanging around at your house, watching Atapattama at 6, waiting for ur magic shows, playing superman, and you showing off your strength by letting all four of us hang off your arm. And, of course, sending us straight home at 7pm sharp!
+        I still remember those nights when Amma was on night duty and I got to stay over with sanki akka and ovini. මාමා would sit the three of us in a row and feed us all from the same plate. It's funny how these little moments turn into the memories we cherish the most.
+        I wonder if our Superman can still hold all four of us again..
+        Thank you for always being more than just a මාමා to me, but my Thaththa too. I'll always be grateful for all the love, care, and countless childhood memories.
+        Wishing you good health, happiness and many more beautiful years ahead. ආදරෙයි මාමේ!!`,
+    language: "en",
+    tapeText: "Pinky",
+    tapeColor: "pink",
+    tag: "",
+    signature: "— Sanuvi Inhara",
+    authorImage: "",
+    authorImageCaption: "",
+  },
   {
     id: 25,
     author: "Vihara Wijesingha",
@@ -172,6 +228,31 @@ export const tributes: Tribute[] = [
     authorImage: "",
     authorImageCaption: "",
   },
+
+  {
+    id: 38,
+    author: "Ranjith Aiya and Anusha Akka",
+    relation: "",
+    title: "",
+    content: `To Dearest Thilaka Malli,
+              Happy 60th Birthday!
+              We are so grateful that our families are connected through Thisal and Ovini!
+              It was such a pleasure catching up with you last August. We will always cherish the memory of that special moment. It was truly a wonderful milestone for both parents!
+              Thank you for sharing some beautiful memories and stories from your life during your short stay with us. We thoroughly enjoyed your company and the opportunity to get to know you better. Ànusha Akka will certainly never forget your fondness for tea! She will make sure her pantry cupboard is well stocked with plenty of tea bags before your next visit 😊.
+              Turning 60 is a special milestone, a time to reflect on a life filled with growth, resilience, achievements, and personal journeys. You have built a beautiful family, established a career, nurtured lasting friendships, and created a legacy that you can look back on with immense pride and gratitude.
+              You are truly a wonderful husband and an amazing father, someone any family would be blessed to have.
+              Congratulations on reaching this remarkable milestone! May this new chapter of your life bring you good health, happiness, peace, and many more beautiful memories with your loved ones.
+              Wishing you a very happy 60th birthday and a fantastic year ahead!
+              With lots of love 
+              Ranjith Aiya and Anusha Akka`,
+    language: "en",
+    tapeText: "",
+    tapeColor: "pink",
+    tag: "",
+    signature: "— Ranjith Aiya and Anusha Akka",
+    authorImage: "",
+    authorImageCaption: "",
+  },
   {
     id: 18,
     author: "Imalsha",
@@ -184,6 +265,21 @@ export const tributes: Tribute[] = [
     tapeColor: "emerald",
     tag: "",
     signature: "— Imalsha",
+    authorImage: "",
+    authorImageCaption: "",
+  },
+  {
+    id: 33,
+    author: "Nethmi and Kevin",
+    relation: "",
+    title: "",
+    content:
+      "Happy 60th Birthday, Bappi! ❤️ Wishing you good health and happiness. May this milestone birthday bring you lots of love, laughter and beautiful memories with family and friends. Hope you have an amazing day celebrating! Lots of love.",
+    language: "en",
+    tapeText: "",
+    tapeColor: "terracotta",
+    tag: "",
+    signature: "— Nethmi and Kevin",
     authorImage: "",
     authorImageCaption: "",
   },

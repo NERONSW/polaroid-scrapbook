@@ -21,7 +21,7 @@ export default function PhotoGallery() {
     );
 
   return (
-    <section id="gallery" className="scroll-mt-20 space-y-8">
+    <section id="gallery" className="scroll-mt-[148px] md:scroll-mt-20 space-y-8">
       {/* Section header */}
       <motion.div
         className="mx-auto max-w-3xl space-y-2 text-center"

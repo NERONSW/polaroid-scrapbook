@@ -6,16 +6,16 @@ import WishesSection from "@/components/sections/WishesSection";
 import PhotoGallery from "@/components/sections/PhotoGallery";
 
 export const metadata: Metadata = {
-  title: "Arthur Edwards — 60th Birthday Archival Scrapbook",
+  title: "Sixty Years of Thilakasiri",
   description:
-    "A private family keepsake celebrating sixty years of wisdom, love & memories — heartfelt letters and archival Polaroid snapshots from one family's archive.",
+    "A keepsake scrapbook of birthday wishes, shared memories, and snapshots gathered from family and friends around the world celebrating Thilakasiri at 60.",
   openGraph: {
-    title: "Arthur Edwards — 60th Birthday Archival Scrapbook",
+    title: "Sixty Years of Thilakasiri",
     description:
-      "Celebrating 60 years of wisdom, love, and memories — a private family keepsake edition.",
+      "A keepsake scrapbook of birthday wishes, shared memories, and snapshots gathered from family and friends around the world celebrating Thilakasiri at 60.",
     type: "website",
     locale: "en_GB",
-    siteName: "Arthur Edwards — 60th Birthday Archival Scrapbook",
+    siteName: "Sixty Years of Thilakasiri",
   },
 };
 

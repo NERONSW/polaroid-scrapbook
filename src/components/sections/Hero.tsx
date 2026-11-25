@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section
       id="story"
-      className="grid scroll-mt-20 grid-cols-1 items-center gap-10 pt-2 lg:grid-cols-12 lg:gap-14"
+      className="grid scroll-mt-37 md:scroll-mt-20 grid-cols-1 items-center gap-10 pt-2 lg:grid-cols-12 lg:gap-14"
     >
       {/* Left — master Polaroid keepsake portrait */}
       <motion.div

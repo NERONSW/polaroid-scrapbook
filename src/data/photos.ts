@@ -68,7 +68,7 @@ export const photos: Photo[] = [
       "“Two daughters, two degrees, and one Dad who still insists he taught us everything we know”",
     year: "2024",
     rotation: 2,
-    tapeTone: "gold",
+    tapeTone: "pink",
   },
   {
     id: 3,
@@ -79,6 +79,24 @@ export const photos: Photo[] = [
     year: "2025",
     rotation: -1,
     tapeTone: "blush",
+  },
+  {
+    id: 28,
+    imageUrl: "/gallery/35.jpeg",
+    title: "Warm Pride in Cold Weather",
+    caption: "“Braving the chill together”",
+    year: "2025",
+    rotation: -1,
+    tapeTone: "pink",
+  },
+  {
+    id: 29,
+    imageUrl: "/gallery/36.jpeg",
+    title: "Official Cake Inspector",
+    caption: "“Guiding the knife with precision”",
+    year: "2003",
+    rotation: -1,
+    tapeTone: "gold",
   },
   {
     id: 4,
@@ -123,7 +141,7 @@ export const photos: Photo[] = [
     caption: "“කියවනවා වගේ ඉන්න ඕනේ”",
     year: "2018",
     rotation: 1.2,
-    tapeTone: "gold",
+    tapeTone: "pink",
   },
   {
     id: 9,
@@ -197,7 +215,7 @@ export const photos: Photo[] = [
       "“විහිළු තහළු, මුරණ්ඩුකම් වගේම අපිට දුන්න හැම උපදෙසක්ම ලැබුණු තැන”",
     year: "2014",
     rotation: -1.2,
-    tapeTone: "blush",
+    tapeTone: "pink",
   },
   {
     id: 19,
@@ -224,7 +242,7 @@ export const photos: Photo[] = [
     caption: "“Bringing out the glam for special occasions”",
     year: "2024",
     rotation: 1,
-    tapeTone: "terracotta",
+    tapeTone: "pink",
   },
   {
     id: 20,

@@ -2,7 +2,7 @@ import { Heart } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer id="dedication" className="scroll-mt-20 pb-12 pt-6">
+    <footer id="dedication" className="scroll-mt-37 md:scroll-mt-20 pb-12 pt-6">
       <div className="relative mx-auto max-w-3xl space-y-6 border border-outline-hairline bg-surface-container-lowest p-8 text-center shadow-lg sm:p-12">
         {/* Delicate dashed inner stitch line */}
         <div
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-4 font-sans text-[10px] uppercase tracking-widest text-on-surface-muted">
-          Archived 2026 • Melbourne • Kept in Living Memory
+          Archived 2026 • Sri Lanka • Kept in Living Memory
         </div>
       </div>
     </footer>
