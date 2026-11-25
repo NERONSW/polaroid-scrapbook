@@ -52,7 +52,7 @@ const sinhala = Noto_Serif_Sinhala({
 });
 
 export const metadata: Metadata = {
-  title: "Arthur Edwards — 60th Birthday Archival Scrapbook",
+  title: "Sixty Years of Thilakasiri",
   description:
     "A private family keepsake celebrating sixty years of wisdom, love, and memories — 24 letters and 22 archival snapshots.",
 };
