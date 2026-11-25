@@ -155,7 +155,7 @@ export default function WishesSection() {
   const remainingCount = tributes.length - INITIAL_VISIBLE_TRIBUTE_COUNT;
 
   return (
-    <section id="wishes" className="scroll-mt-20 space-y-8">
+    <section id="wishes" className="scroll-mt-[148px] md:scroll-mt-20 space-y-8">
       {/* Section header */}
       <motion.div
         className="mx-auto max-w-2xl space-y-2 text-center"
