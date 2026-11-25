@@ -7,8 +7,7 @@ import { tributes } from "@/data/tributes";
 import { photos } from "@/data/photos";
 
 // Master keepsake portrait (reference/code.html hero "★ The Best Smile").
-const HERO_PORTRAIT_SRC =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuAerGh59XzscT6NQvhXus_w3NJahsNuihfU6pjMZqQ_HA1Fu0urUcX4Hb_-SQQdIltArwG9DaWvMyDB_9rfLa2Tsjukl_7QR8XNPEZr--KncZdbK_Bpxu_hN9mgfecWtiyttmZm8-DOvdKygmbArvwJMbpIfPLW9R6Oc4iSFk5mrFRM9cKqEQm2kIRcTbZX81YCXw6Oo7Q6kS3kxEn3RozosC4iVfRx0qSCw5qvGBgw";
+const HERO_PORTRAIT_SRC = "/profilePicNew.jpg";
 
 export default function Hero() {
   return (
@@ -37,17 +36,17 @@ export default function Hero() {
             <div className="relative aspect-[4/4.3] w-full overflow-hidden bg-surface-container">
               <img
                 src={HERO_PORTRAIT_SRC}
-                alt="Arthur portrait 2023"
+                alt="Thaththa's "
                 className="h-full w-full object-cover sepia-[0.06] transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute bottom-2 right-2 bg-on-surface-espresso/50 px-2 py-0.5 font-sans text-[10px] tracking-widest text-white backdrop-blur-sm">
-                OCT ’23
+                JUl ’26
               </div>
             </div>
 
             <div className="space-y-1 pt-3 text-center">
               <p className="font-cursive text-2xl leading-tight text-on-surface-espresso">
-                Arthur — London &amp; Home, 2023 ♡
+                Thaththa — Bosphorus, Türkiye 2026 ♡
               </p>
               <p className="font-sans text-[11px] font-semibold uppercase tracking-wider text-on-surface-muted">
                 Celebrating Six Decades of Life, Love &amp; Laughter

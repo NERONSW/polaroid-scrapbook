@@ -65,11 +65,30 @@ export const tributes: Tribute[] = [
     authorImage: "",
     authorImageCaption: "",
   },
-
+  {
+    id: 38,
+    author: "Dewni Ekanayaka",
+    relation: "Daughter",
+    title: "",
+    content: `ජීවිතය යනු තනි ඉරක් නොව, රටා රැසකින් පිරුණු අපූරු සිතුවමක් බවත්,
+              ලෝකය පුරා විසිරී ඇති කටුක යථාර්ථයන් අතර මනුෂ්‍යත්වය මහා වටිනාකමක් ගන්නා බවත්,
+              ගන්නා ඕනෑම තීරණයක් නිවැරදි තීරණයක් බවට පත්කර ගැනීමේ හැකියාව අප සතු බවත්,
+              සෑම කෙනෙකුටම තමන්ටම ආවේණික වූ කතාවක් ඇති බවත්,
+              තමන්ගේ විශ්වාසයන් මත පිහිටා නොසැලී ජීවත් විය යුතු බවත්,
+              මට කියා දුන් තාත්තේ...
+              ගඟ දිගේ යන්නට බලා හිඳිමි...`,
+    language: "en",
+    tapeText: "Sanki",
+    tapeColor: "pink",
+    tag: "",
+    signature: "— Sanki",
+    authorImage: "",
+    authorImageCaption: "",
+  },
   {
     id: 36,
     author: "Ovini Ekanayaka",
-    relation: "Younger Daughter",
+    relation: "Daughter",
     title: "",
     content: `Hi Thaththa,
     I cant believe you are 60 already.  I still remember making a card for your 50th Birthday, in 2016, couple of weeks before you finished your work at Qatar and moved back to Lanka. Growing up was so much fun with you and Im extremely grateful for it. I know raising two daughters wasnt the easiest. You were never extremely strict with us but you always made sure we had the right values at our core. Yhe best part of my childhood was the bedtime stories. Every day before i went to bed up until I was 11 or 12 years old, you would tell us a story before bed, and then through skype when you moved abroad.  Me and akki always talk about the passion you have for everything you do and everyday life. Even now, you would be amazed at something, the way someone works and you would tell us. Growing up every day after school you would listen to me speak about everything that happened to me at school and my day. Even when i moved to australia, you always made time to listen my stories and i always look forward for our daily call at your lunch time. You always endlessly supported our dreams and made sure to push us in to the right direction.  We used to say thaththa made election promises as he would say yes to all our absurd childhood ideas and then say no when we ask him for it. Thaththa made an election promise years ago to take us camping. it involved walking in waters knee deep, and coming to camping grounds, and eating Smores and thaththas rrice and curry. I hope 60is where we stop witht he elction promises and act it out. I can’t wait to see you travel the world and travel the world with you where i can. Im excited to whats coming ahead. I hope you stay happu amd i hope you know you have succeeded in life in every way person. Most importantly thank you for being a dad i could love whole heartedly and look up to in every aspect of life. I love you thaththa.`,
@@ -81,7 +100,24 @@ export const tributes: Tribute[] = [
     authorImage: "",
     authorImageCaption: "",
   },
-
+  {
+    id: 39,
+    author: "Nipuna Suraj",
+    relation: "",
+    title: "",
+    content: `Happy 60th Birthday, Thaththa!
+              You are truly one of the most remarkable and unique people I’ve ever had the privilege of knowing. The way you see the world, understand people, and approach life is genuinely inspiring. Your knowledge, wisdom, and life experiences never cease to amaze me.
+              Dewni and I feel incredibly lucky to have you in our lives. We are truly grateful for your guidance, support, and the wisdom you share with us. Thank you for always being there for us and for being such an important part of our lives.
+              Wishing you good health, happiness, and many more wonderful years ahead. ❤️
+              \nP.S. All hail the King, තිලක ශ්‍රී ඒකනාථ II ! 👑😂`,
+    language: "en",
+    tapeText: "Nipuna",
+    tapeColor: "blush",
+    tag: "",
+    signature: "— Nipuna Suraj",
+    authorImage: "",
+    authorImageCaption: "",
+  },
   {
     id: 37,
     author: "Thisal Koswanage",
@@ -103,7 +139,7 @@ export const tributes: Tribute[] = [
   },
   {
     id: 32,
-    author: "Kithsiri Ekanayaka",
+    author: "Kithsiri Ekanayake",
     relation: "Elder Brother",
     title: "",
     content: `One unforgettable memory I will always remember is my wedding day. You were supposed to be my best man, but you didn't even turn up! 😩😩 And the funniest part was that there was nobody else to hand the flower bouquet to Nilmini. In the end, Thilake Aiya, already married and with a child, had to step in and play the role! 🤩😂 Some memories are simply impossible to forget!
@@ -112,7 +148,7 @@ export const tributes: Tribute[] = [
     tapeText: "අය්යා",
     tapeColor: "terracotta",
     tag: "",
-    signature: "— Kithsiri Ekanayaka",
+    signature: "— Kithsiri Ekanayake",
     authorImage: "",
     authorImageCaption: "",
   },
@@ -154,7 +190,7 @@ export const tributes: Tribute[] = [
     relation: "Sister-in-law",
     title: "",
     content:
-      "චිත්තක්ශණයක් පාසා දියවෙන ජීවිතයක දශක හයක කාලයක අභිමුවට සපැමිණි අය්යේ,ඔබ අප පවුලේ සාමාජිකත්වය ලත් දා සිට ඔබෙන් අපටත්, අපෙන් ඔබටත් හුවමාරු වූ ආදරය, සෙනෙහස අදටත් එලෙසමය.අප පවුල් සංස්ථාවේ සුහද හමුවීම් වල බරසාර පිළිසඳරවලත්, සිනහවෙන් පිරුණු කවට කතාවේත් මුලසුන ඔබය. වගකීම් ඉදිරියේ මස්සිනා නොව අය්යාය. ඉතින් පතන්නම් ඔබට ආ දුරක් සේම තව දුර ගමනකට කාය ශක්තිය මෙන්ම මානසික ශක්තියද ලබන්නට වාසනාවද ආදරයෙන්! සතුට , සැනසීම ම ජනිත වන්නට!සියලු කර්තව්‍යන් සාර්ථක  වන්නට සෙනෙහසින්. මේ නංගී- හර්ෂී.",
+      "චිත්තක්ශණයක් පාසා දියවෙන ජීවිතයක දශක හයක කාලයක අභිමුවට සපැමිණි අය්යේ,\n\nඔබ අප පවුලේ සාමාජිකත්වය ලත් දා සිට ඔබෙන් අපටත්, අපෙන් ඔබටත් හුවමාරු වූ ආදරය, සෙනෙහස අදටත් එලෙසමය.\n\nඅප පවුල් සංස්ථාවේ සුහද හමුවීම් වල බරසාර පිළිසඳරවලත්, සිනහවෙන් පිරුණු කවට කතාවේත් මුලසුන ඔබය. \n\nවගකීම් ඉදිරියේ මස්සිනා නොව අය්යාය. \n\nඉතින් පතන්නම් ඔබට ආ දුරක් සේම තව දුර ගමනකට කාය ශක්තිය මෙන්ම මානසික ශක්තියද ලබන්නට වාසනාවද ආදරයෙන්! \n\nසතුට, සැනසීම ම ජනිත වන්නට!සියලු කර්තව්‍යන් සාර්ථක  වන්නට \nසෙනෙහසින්. \n\nමේ නංගී- හර්ෂී.",
     language: "si",
     tapeText: "හර්ෂී නංගී",
     tapeColor: "gold",
@@ -165,16 +201,16 @@ export const tributes: Tribute[] = [
   },
   {
     id: 29,
-    author: "Chandrarathna",
+    author: "Chandrarathna Malli",
     relation: "",
     title: "",
     content:
-      "කැපකිරීම්, බිඳවැටීම් මෙන්ම ජයග්‍රහණයන්, සාර්ථකත්වයන් සියල්ල පොදි බැඳ ජීවිතය දරාගෙන මෙපමණක් දුරක් ආ තිලකසිරි අය්යේ, තව දීර්ඝ කාලයකට ඔබට ශක්තිය, ධෛර්යය ලැබේවා! සුභම සුභ උපන්දිනයක් වේවා!",
+      "කැපකිරීම්, බිඳවැටීම් මෙන්ම ජයග්‍රහණයන්, සාර්ථකත්වයන් සියල්ල පොදි බැඳ ජීවිතය දරාගෙන මෙපමණක් දුරක් ආ තිලකසිරි අය්යේ, \nතව දීර්ඝ කාලයකට ඔබට ශක්තිය, ධෛර්යය ලැබේවා! සුභම සුභ උපන්දිනයක් වේවා!",
     language: "en",
     tapeText: "",
     tapeColor: "terracotta",
     tag: "",
-    signature: "— Chandrarathna",
+    signature: "— Chandrarathna Malli",
     authorImage: "",
     authorImageCaption: "",
   },
@@ -184,7 +220,7 @@ export const tributes: Tribute[] = [
     relation: "Brother-in-law",
     title: "",
     content:
-      "How big he is, doesn't matter still Chooti Ukkun to mother. He loves that",
+      "No matter how big he is, he is still Chooti Ukkun to his mother, and he loves that",
     language: "en",
     tapeText: "මල්ලි",
     tapeColor: "amber",
@@ -196,7 +232,7 @@ export const tributes: Tribute[] = [
 
   {
     id: 35,
-    author: "Sanuvi Inhara",
+    author: "Sanuwi Inhara",
     relation: "",
     title: "",
     content: `Happy Birthday to our Kadawatha Superman!!
@@ -253,6 +289,22 @@ export const tributes: Tribute[] = [
     authorImage: "",
     authorImageCaption: "",
   },
+
+  {
+    id: 39,
+    author: "ධම්මි නංගි සහ ගාමිණී මල්ලි",
+    relation: "",
+    title: "",
+    content: `නිරෝගීමත් සුභම සුභ 60 වෙනි උපන්දිනයක් වේවා තිලකසිරි අය්යේ. ඕං බලන් ඉස්තාන්බුල් වගේ පොත් තව තවත් ලියන්න ලැබෙන්න කියලා ප්‍රාර්තනා කරනවා. ඊලග අවුරුද්දේ ලංකාවට අපි ආයේ හමුවෙමු.`,
+    language: "si",
+    tapeText: "",
+    tapeColor: "blush",
+    tag: "",
+    signature: "— ධම්මි නංගි සහ ගාමිණී මල්ලි",
+    authorImage: "",
+    authorImageCaption: "",
+  },
+
   {
     id: 18,
     author: "Imalsha",
@@ -319,7 +371,7 @@ export const tributes: Tribute[] = [
     relation: "",
     title: "",
     content:
-      "Long time ago in year 2000 we met in somewhere (Balangoda) this lonely planet.",
+      "Long time ago in year 2000 we met somewhere (Balangoda) in this lonely planet.",
     language: "en",
     tapeText: "",
     tapeColor: "terracotta",
@@ -514,7 +566,7 @@ export const tributes: Tribute[] = [
   },
   {
     id: 23,
-    author: "Niranga perera",
+    author: "Niranga Perera",
     relation: "",
     title: "",
     content: "Many happy returns of the day",
@@ -575,11 +627,11 @@ export const tributes: Tribute[] = [
 
   {
     id: 31,
-    author: "Sunil",
+    author: "Sunil Ayya",
     relation: "",
     title: "",
     content:
-      "My dear Thilak mallie. . Happy 60th Birthday! Looking at all you have achieved from a respected engineering career overseas to earning the admiration of the literary world with your contributions; books, columns and blogs, it’s amazing how grounded, humble, and kind you have always remained. You have a rare gift for understanding people and it shines through in your both your life and your writing; specially in the affectionate way you weave your wife, Ganga, and two daughters; Owini and Dewni, into your stories. Send you warmest greetings on your Birthday!",
+      "My dear Thilak mallie.. Happy 60th Birthday! Looking at all you have achieved from a respected engineering career overseas to earning the admiration of the literary world with your contributions; books, columns and blogs, it’s amazing how grounded, humble, and kind you have always remained. You have a rare gift for understanding people and it shines through in both your life and your writing; specially in the affectionate way you weave your wife, Ganga, and two daughters; Ovini and Dewni, into your stories. Sending you warmest greetings on your Birthday!",
     language: "en",
     tapeText: "සුනිල් - හික්කඩුව",
     tapeColor: "terracotta",

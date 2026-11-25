@@ -35,7 +35,7 @@ function PhotoFrame({ photo }: { photo: Photo }) {
   return (
     <div
       style={aspect ? { aspectRatio: aspect } : undefined}
-      className="relative flex max-h-[60vh] min-h-60 min-w-65 w-full items-center justify-center overflow-hidden border border-outline-hairline bg-surface-container sm:min-h-[320px]"
+      className="relative flex max-h-[60vh] min-h-60 min-w-65 w-full items-center justify-center overflow-hidden border border-outline-hairline bg-surface-container sm:min-h-80"
     >
       {isImageLoading && (
         <div
