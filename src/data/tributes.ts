@@ -71,12 +71,17 @@ export const tributes: Tribute[] = [
     relation: "Daughter",
     title: "",
     content: `ජීවිතය යනු තනි ඉරක් නොව, රටා රැසකින් පිරුණු අපූරු සිතුවමක් බවත්,
-              ලෝකය පුරා විසිරී ඇති කටුක යථාර්ථයන් අතර මනුෂ්‍යත්වය මහා වටිනාකමක් ගන්නා බවත්,
+              අප දකින මානයෙන් ඔබ්බට, කුතුහලය දනවන විචිත්‍ර ලෝකයක් පවතින බවත්,
+              අප වටා විසිරී ඇති විවිධ යථාර්ථයන් අතර මනුෂ්‍යත්වය මහා වටිනාකමක් ගන්නා බවත්,
+              සියල්ල දෙස විවෘත මනසකින් බලන්නටත්, අලුත් දේ සොයා යන්නටත් කිසිදා පසුබට නොවිය යුතු බවත්,
               ගන්නා ඕනෑම තීරණයක් නිවැරදි තීරණයක් බවට පත්කර ගැනීමේ හැකියාව අප සතු බවත්,
-              සෑම කෙනෙකුටම තමන්ටම ආවේණික වූ කතාවක් ඇති බවත්,
-              තමන්ගේ විශ්වාසයන් මත පිහිටා නොසැලී ජීවත් විය යුතු බවත්,
-              මට කියා දුන් තාත්තේ...
-              ගඟ දිගේ යන්නට බලා හිඳිමි...`,
+              සෑම කෙනෙකුටම තමන්ටම ආවේණික වූ කතාවක් ඇති බවත්, ඒ කතාවට ගරු කරන්නට අප ඉගෙන ගත යුතු බවත්,
+              තමන්ගේ නිවැරදි විශ්වාසයන් මත පිහිටා නොසැලී ජීවත් විය යුතු බවත්,
+              ක්‍රියාවෙන්ම මට කියා දුන් තාත්තේ,
+              ගඟ දිගේ යන්නට බලා හිඳිමි...
+              දිර්ඝායු ම වේවා!
+              ආදරෙන්,
+              සංකි ❤️`,
     language: "en",
     tapeText: "Sanki",
     tapeColor: "pink",
@@ -90,8 +95,13 @@ export const tributes: Tribute[] = [
     author: "Ovini Ekanayaka",
     relation: "Daughter",
     title: "",
-    content: `Hi Thaththa,
-    I cant believe you are 60 already.  I still remember making a card for your 50th Birthday, in 2016, couple of weeks before you finished your work at Qatar and moved back to Lanka. Growing up was so much fun with you and Im extremely grateful for it. I know raising two daughters wasnt the easiest. You were never extremely strict with us but you always made sure we had the right values at our core. Yhe best part of my childhood was the bedtime stories. Every day before i went to bed up until I was 11 or 12 years old, you would tell us a story before bed, and then through skype when you moved abroad.  Me and akki always talk about the passion you have for everything you do and everyday life. Even now, you would be amazed at something, the way someone works and you would tell us. Growing up every day after school you would listen to me speak about everything that happened to me at school and my day. Even when i moved to australia, you always made time to listen my stories and i always look forward for our daily call at your lunch time. You always endlessly supported our dreams and made sure to push us in to the right direction.  We used to say thaththa made election promises as he would say yes to all our absurd childhood ideas and then say no when we ask him for it. Thaththa made an election promise years ago to take us camping. it involved walking in waters knee deep, and coming to camping grounds, and eating Smores and thaththas rrice and curry. I hope 60is where we stop witht he elction promises and act it out. I can’t wait to see you travel the world and travel the world with you where i can. Im excited to whats coming ahead. I hope you stay happu amd i hope you know you have succeeded in life in every way person. Most importantly thank you for being a dad i could love whole heartedly and look up to in every aspect of life. I love you thaththa.`,
+    content: `Thaththa,
+              I can't believe you're 60 already. It feels like yesterday that I made your 50th birthday card in 2016, a couple of weeks before you wrapped up work in Qatar and moved back to Lanka. Growing up with you was so much fun, and I'm extremely grateful for it. I know raising two daughters wasn't the easiest, but you were never overly strict with us, and you always made sure we had the right values at our core.
+              The best part of my childhood was the bedtime stories. Every night until I was 11 or 12, you told us a story before bed, and when you moved abroad, you kept telling them over Skype. Akki and I often talk about the passion you bring to everything you do, and to everyday life. Even now, something will catch your attention, and you'll be so amazed that you have to tell us all about it.
+              That same attentiveness was there when it came to us. Growing up, you listened to me talk about everything that happened at school, every single day. Even after I moved to Australia, you always made time to hear my stories, and I still look forward to our daily call during your lunch break. You supported our dreams endlessly and always nudged us in the right direction.
+              We used to joke that Thaththa made election promises. He would say yes to all our absurd childhood ideas, then say no when we asked him to follow through. Years ago, you promised to take us camping. It was a detailed promise which involved wading through knee-deep water, setting up our tents with a fire place and having meals cooked by Thaththa. I hope 60 is where we stop the election promises and start acting on them.
+              I can't wait to watch you travel the world, and to join you whenever I can. I'm excited for everything that's coming. I hope you stay happy, and I hope you know you've succeeded in life in every way a person can. Most of all, thank you for being a dad I could love wholeheartedly and look up to in every aspect of life.
+              I love you, Thaththa.`,
     language: "en",
     tapeText: "Ovi",
     tapeColor: "gold",
@@ -229,7 +239,21 @@ export const tributes: Tribute[] = [
     authorImage: "",
     authorImageCaption: "",
   },
-
+  {
+    id: 40,
+    author: "Dammi",
+    relation: "",
+    title: "",
+    content: `Happy 60th Birthday, Thilakasiri Ayya! 🥳🎂
+              Wishing you good health, happiness and many more beautiful years ahead. May your days always be filled with love, laughter and precious moments with family. Hope you have a wonderful birthday! `,
+    language: "en",
+    tapeText: "",
+    tapeColor: "terracotta",
+    tag: "",
+    signature: "— Dammi",
+    authorImage: "",
+    authorImageCaption: "",
+  },
   {
     id: 35,
     author: "Sanuwi Inhara",
@@ -637,6 +661,20 @@ export const tributes: Tribute[] = [
     tapeColor: "terracotta",
     tag: "",
     signature: "— Sunil",
+    authorImage: "",
+    authorImageCaption: "",
+  },
+  {
+    id: 41,
+    author: "Bandu Mahasen",
+    relation: "",
+    title: "",
+    content: `You are one of my closest friends, someone who has achieved so many goals and travelled different paths throughout life's journey. As you reach this wonderful milestone of 60 years, I wish you a very happy 60th birthday!`,
+    language: "en",
+    tapeText: "Mahasen",
+    tapeColor: "blush",
+    tag: "",
+    signature: "— Bandu Mahasen",
     authorImage: "",
     authorImageCaption: "",
   },
