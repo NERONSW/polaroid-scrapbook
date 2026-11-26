@@ -240,7 +240,7 @@ export const photos: Photo[] = [
     imageUrl: "/gallery/33.jpeg",
     title: "Best dressed moments",
     caption: "“Bringing out the glam for special occasions”",
-    year: "2024",
+    year: "2000",
     rotation: 1,
     tapeTone: "pink",
   },
