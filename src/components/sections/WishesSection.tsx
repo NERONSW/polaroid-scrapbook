@@ -167,15 +167,15 @@ export default function WishesSection() {
         <div className="inline-flex items-center justify-center gap-2 bg-surface-container px-3 py-1">
           <PenLine className="h-4 w-4 text-primary" aria-hidden="true" />
           <span className="font-sans text-xs font-bold uppercase tracking-widest text-primary">
-            Chapter I • Letters &amp; Reflections
+            Chapter I • WORDS FROM THE HEART
           </span>
         </div>
         <h2 className="font-headline text-3xl text-on-surface-espresso sm:text-4xl">
-          Tributes &amp; Handwritten Notes from the Hearth
+          The People, The Moments, The Memories
         </h2>
         <p className="font-body italic text-on-surface-muted">
-          {tributes.length} folded notes, shared laughs, and lifelong memories
-          inscribed by those who know you best.
+          ඔබට ආදරය කරන, ඔබ සමඟ ජීවිතයේ මතකයන් බෙදාගත් ආදරණීයයන්ගේ හදවතින් නැඟුණු
+          සටහන්, සුන්දර මතකයන් සහ ආදරණීය සුබපැතුම් එකතුවක්.
         </p>
       </motion.div>
 
@@ -206,7 +206,7 @@ export default function WishesSection() {
           <span>
             {expanded
               ? "Show Fewer Tributes"
-              : `Reveal All ${remainingCount} Tributes & Letters ♡`}
+              : `Reveal All ${tributes.length} Tributes ♡`}
           </span>
           <ChevronDown
             className={clsx(
