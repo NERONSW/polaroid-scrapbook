@@ -52,7 +52,7 @@ const sinhala = Noto_Serif_Sinhala({
 });
 
 export const metadata: Metadata = {
-  title: "Sixty Years of Thilakasiri",
+  title: "Sixty Years of Tilakasiri",
   description:
     "A private family keepsake celebrating sixty years of wisdom, love, and memories — 24 letters and 22 archival snapshots.",
 };
