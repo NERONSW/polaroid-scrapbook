@@ -70,16 +70,16 @@ export const tributes: Tribute[] = [
     author: "Dewni Ekanayaka",
     relation: "Daughter",
     title: "",
-    content: `ජීවිතය යනු තනි ඉරක් නොව, රටා රැසකින් පිරුණු අපූරු සිතුවමක් බවත්,
-              අප දකින මානයෙන් ඔබ්බට, කුතුහලය දනවන විචිත්‍ර ලෝකයක් පවතින බවත්,
-              අප වටා විසිරී ඇති විවිධ යථාර්ථයන් අතර මනුෂ්‍යත්වය මහා වටිනාකමක් ගන්නා බවත්,
-              සියල්ල දෙස විවෘත මනසකින් බලන්නටත්, අලුත් දේ සොයා යන්නටත් කිසිදා පසුබට නොවිය යුතු බවත්,
-              ගන්නා ඕනෑම තීරණයක් නිවැරදි තීරණයක් බවට පත්කර ගැනීමේ හැකියාව අප සතු බවත්,
-              සෑම කෙනෙකුටම තමන්ටම ආවේණික වූ කතාවක් ඇති බවත්, ඒ කතාවට ගරු කරන්නට අප ඉගෙන ගත යුතු බවත්,
-              තමන්ගේ නිවැරදි විශ්වාසයන් මත පිහිටා නොසැලී ජීවත් විය යුතු බවත්,
-              ක්‍රියාවෙන්ම මට කියා දුන් තාත්තේ,
-              ගඟ දිගේ යන්නට බලා හිඳිමි...
-              දිර්ඝායු ම වේවා!
+    content: `ජීවිතය යනු තනි ඉරක් නොව, රටා රැසකින් පිරුණු අපූරු සිතුවමක් බවත්,\n
+              අප දකින මානයෙන් ඔබ්බට, කුතුහලය දනවන විචිත්‍ර ලෝකයක් පවතින බවත්,\n
+              අප වටා විසිරී ඇති විවිධ යථාර්ථයන් අතර මනුෂ්‍යත්වය මහා වටිනාකමක් ගන්නා බවත්,\n
+              සියල්ල දෙස විවෘත මනසකින් බලන්නටත්, අලුත් දේ සොයා යන්නටත් කිසිදා පසුබට නොවිය යුතු බවත්,\n
+              ගන්නා ඕනෑම තීරණයක් නිවැරදි තීරණයක් බවට පත්කර ගැනීමේ හැකියාව අප සතු බවත්,\n
+              සෑම කෙනෙකුටම තමන්ටම ආවේණික වූ කතාවක් ඇති බවත්, ඒ කතාවට ගරු කරන්නට අප ඉගෙන ගත යුතු බවත්,\n
+              තමන්ගේ නිවැරදි විශ්වාසයන් මත පිහිටා නොසැලී ජීවත් විය යුතු බවත්,\n
+              ක්‍රියාවෙන්ම මට කියා දුන් තාත්තේ,\n
+              ගඟ දිගේ යන්නට බලා හිඳිමි...\n
+              දිර්ඝායු ම වේවා!\n
               ආදරෙන්,
               සංකි ❤️`,
     language: "en",
@@ -675,6 +675,24 @@ export const tributes: Tribute[] = [
     tapeColor: "blush",
     tag: "",
     signature: "— Bandu Mahasen",
+    authorImage: "",
+    authorImageCaption: "",
+  },
+  {
+    id: 42,
+    author: "Gemunu's Family",
+    relation: "",
+    title: "",
+    content: `Happy Birthday, Tilakasiri Aiya! 🎉
+
+Wishing you a wonderful birthday filled with happiness, good health, peace, and success. May all your dreams come true, and may the year ahead bring you countless blessings, beautiful moments, and endless joy.
+
+Have a truly amazing day!`,
+    language: "en",
+    tapeText: "Gemunu",
+    tapeColor: "terracotta",
+    tag: "",
+    signature: "— Gemunu's Family",
     authorImage: "",
     authorImageCaption: "",
   },
