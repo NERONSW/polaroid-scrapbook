@@ -37,7 +37,7 @@ export default function Footer() {
 
         <div className="py-2">
           <p className="font-cursive text-3xl tracking-wide text-primary">
-            “To the heart of our family — forever grateful for you, Dad ♡”
+            “To the heart of our family — forever grateful for you, Thaththa ♡”
           </p>
         </div>
 
