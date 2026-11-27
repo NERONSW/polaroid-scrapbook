@@ -6,16 +6,16 @@ import WishesSection from "@/components/sections/WishesSection";
 import PhotoGallery from "@/components/sections/PhotoGallery";
 
 export const metadata: Metadata = {
-  title: "Sixty Years of Thilakasiri",
+  title: "Sixty Years of Tilakasiri",
   description:
     "A keepsake scrapbook of birthday wishes, shared memories, and snapshots gathered from family and friends around the world celebrating Thilakasiri at 60.",
   openGraph: {
-    title: "Sixty Years of Thilakasiri",
+    title: "Sixty Years of Tilakasiri",
     description:
       "A keepsake scrapbook of birthday wishes, shared memories, and snapshots gathered from family and friends around the world celebrating Thilakasiri at 60.",
     type: "website",
     locale: "en_GB",
-    siteName: "Sixty Years of Thilakasiri",
+    siteName: "Sixty Years of Tilakasiri",
   },
 };
 
