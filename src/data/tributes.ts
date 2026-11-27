@@ -678,4 +678,22 @@ export const tributes: Tribute[] = [
     authorImage: "",
     authorImageCaption: "",
   },
+  {
+    id: 42,
+    author: "Gemunu's Family",
+    relation: "",
+    title: "",
+    content: `Happy Birthday, Tilakasiri Aiya! 🎉
+
+Wishing you a wonderful birthday filled with happiness, good health, peace, and success. May all your dreams come true, and may the year ahead bring you countless blessings, beautiful moments, and endless joy.
+
+Have a truly amazing day!`,
+    language: "en",
+    tapeText: "Gemunu",
+    tapeColor: "terracotta",
+    tag: "",
+    signature: "— Gemunu's Family",
+    authorImage: "",
+    authorImageCaption: "",
+  },
 ];
