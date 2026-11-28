@@ -241,16 +241,16 @@ export const tributes: Tribute[] = [
   },
   {
     id: 40,
-    author: "Dammi",
+    author: "Dammika Arachch",
     relation: "",
     title: "",
     content: `Happy 60th Birthday, Thilakasiri Ayya! 🥳🎂
               Wishing you good health, happiness and many more beautiful years ahead. May your days always be filled with love, laughter and precious moments with family. Hope you have a wonderful birthday! `,
     language: "en",
-    tapeText: "",
+    tapeText: "Dammi Nangi",
     tapeColor: "terracotta",
     tag: "",
-    signature: "— Dammi",
+    signature: "— Dammika Arachch",
     authorImage: "",
     authorImageCaption: "",
   },
@@ -269,7 +269,7 @@ export const tributes: Tribute[] = [
     tapeText: "Pinky",
     tapeColor: "pink",
     tag: "",
-    signature: "— Sanuvi Inhara",
+    signature: "— Sanuwi Inhara",
     authorImage: "",
     authorImageCaption: "",
   },
@@ -680,19 +680,19 @@ export const tributes: Tribute[] = [
   },
   {
     id: 42,
-    author: "Gemunu's Family",
+    author: "Gamunu's Family",
     relation: "",
     title: "",
     content: `Happy Birthday, Tilakasiri Aiya! 🎉
 
-Wishing you a wonderful birthday filled with happiness, good health, peace, and success. May all your dreams come true, and may the year ahead bring you countless blessings, beautiful moments, and endless joy.
+              Wishing you a wonderful birthday filled with happiness, good health, peace, and success. May all your dreams come true, and may the year ahead bring you countless blessings, beautiful moments, and endless joy.
 
-Have a truly amazing day!`,
+              Have a truly amazing day!`,
     language: "en",
-    tapeText: "Gemunu",
+    tapeText: "Gamunu",
     tapeColor: "terracotta",
     tag: "",
-    signature: "— Gemunu's Family",
+    signature: "— Gamunu's Family",
     authorImage: "",
     authorImageCaption: "",
   },
