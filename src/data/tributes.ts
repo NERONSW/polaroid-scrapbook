@@ -241,7 +241,7 @@ export const tributes: Tribute[] = [
   },
   {
     id: 40,
-    author: "Dammika Arachch",
+    author: "Dammika Arachchi",
     relation: "",
     title: "",
     content: `Happy 60th Birthday, Thilakasiri Ayya! 🥳🎂
