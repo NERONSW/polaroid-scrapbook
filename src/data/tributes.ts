@@ -250,7 +250,7 @@ export const tributes: Tribute[] = [
     tapeText: "Dammi Nangi",
     tapeColor: "terracotta",
     tag: "",
-    signature: "— Dammika Arachch",
+    signature: "— Dammika Arachchi",
     authorImage: "",
     authorImageCaption: "",
   },
